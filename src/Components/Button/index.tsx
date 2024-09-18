@@ -17,7 +17,7 @@ export default function Button() {
         ></path>
       </svg>
 
-      <Text>Button</Text>
+      <Text>Login</Text>
     </StyledButton>
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   width: 520px;
-  height: 400px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Text = styled.p`
 
 export const StyledForm = styled.form`
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -33,7 +33,10 @@ export const StyledInput = styled.input`
   border-radius: 50px;
   width: 400px;
   color: #001D4A;
-  height: 25px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0px 10px;
+  font-weight: 1000px;
 `;
 
 export const StyledLabel = styled.p`
@@ -44,6 +47,7 @@ export const StyledLabel = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
+  font-size: 18px;
   width: 400px;
   text-decoration: underline;
   color: #d85cfa;

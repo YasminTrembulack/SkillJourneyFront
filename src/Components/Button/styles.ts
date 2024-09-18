@@ -2,37 +2,39 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
 
-    background-color: #B86ECC;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #c54ee6;
     color: #fff;
-    width: 8.5em;
-    height: 2.9em;
-    border: #9C7CA5 0.2em solid;
+    width: 9.4em;
+    height: 3.1em;
+    border: #c54ee6 0.2em solid;
     border-radius: 11px;
     text-align: right;
     transition: all 0.6s ease;
-    gap: 20px;
 
 
     &:hover {
-        background-color: #d85cfa;
-        border: #d85cfa 0.2em solid;
+        background-color: #cd21fc;
+        border: #cd21fc 0.2em solid;
         cursor: pointer;
     }
 
     & svg {
         width: 1.6em;
-        margin: -0.2em 0.8em 1em;
-        position: absolute;
         display: flex;
         transition: all 0.6s ease;
     }
 
     &:hover svg {
-    transform: translateX(5px);
+        transform: translateX(5px);
     }
 
 `;
 
 export const Text = styled.div`
-  margin: 0 1.5em
+    font-size: 18px;
+    
 `;

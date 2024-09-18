@@ -10,9 +10,9 @@ export default function Card()
                 <Text>LOGIN</Text>
                 <StyledForm>
                     <StyledLabel children={"Email:"}/>
-                    <StyledInput />
+                    <StyledInput type="email"/>
                     <StyledLabel children={"Senha:"}/>             
-                    <StyledInput />
+                    <StyledInput type="password" />
                     <StyledLink to={"/register"} children={"Não tenho uma conta"}/>
                     <Button/>
                 </StyledForm>

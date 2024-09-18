@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
-    background-color: #dbdbdb;
+    background-color: #ebebeb;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -11,4 +11,5 @@ export const StyledDiv = styled.div`
 export const Image = styled.img`
     width: 800px;
     height: 800px;
+    -webkit-user-drag: none;
 `
