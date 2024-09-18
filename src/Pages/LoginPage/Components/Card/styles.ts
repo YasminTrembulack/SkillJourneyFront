@@ -5,13 +5,15 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: aqua;
+  background-color: rgb(39, 71, 110);
   padding: 10px;
+  margin-left: 60px;
   border-radius: 10px;
 `;
 
 export const Text = styled.p`
   font-weight: 1000;
+  color: #ffff;
   font-size: xx-large;
 `;
 
@@ -32,6 +34,7 @@ export const StyledInput = styled.input`
 
 export const StyledLabel = styled.p`
   font-weight: bold;
+  color: #ffff;
   font-size: x-large;
 `;
 
