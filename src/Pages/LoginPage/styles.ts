@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
+    background-color: #dbdbdb;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
