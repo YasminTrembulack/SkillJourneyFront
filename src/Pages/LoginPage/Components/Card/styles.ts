@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Content = styled.div`
-  width: 520px;
-  height: 450px;
+  width: 40%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgb(39, 71, 110);
   padding: 10px;
-  margin-left: 60px;
-  border-radius: 20px;
+  /* margin-left: 60px; */
+  /* border-radius: 20px; */
 `;
 
 export const Text = styled.p`
