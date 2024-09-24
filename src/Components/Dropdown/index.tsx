@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StyledSelect, StyledOption } from './styles'; // Ajuste o caminho conforme necessário
+import { LanguageContext } from '../../Context/language';
 
 interface DropdownProps {
     value: string;
@@ -8,10 +9,12 @@ interface DropdownProps {
 }
 
 export const Dropdown: React.FC<DropdownProps> = ({ value, onChange, options }) => {
+    const {getText} = useContext(LanguageContext);
+    
     return (
         <StyledSelect value={value} onChange={onChange} aria-required="true">
             <StyledOption value="" disabled>
-                Selecione uma opção
+                {getText("select") + ":"}
             </StyledOption>
             {options.map((option, index) => (
                 <StyledOption key={index} value={option.value}>

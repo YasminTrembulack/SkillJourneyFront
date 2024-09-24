@@ -10,5 +10,8 @@
     "birthDate": "Data de nascimento",
     "admissionalDate": "Data de admissão",
     "role": "Cargo",
-    "department": "Departamento"
+    "department": "Departamento",
+    "select": "Selecione uma opção",
+    "registration": "REGISTRO",
+    "register": "Registrar"
 }
