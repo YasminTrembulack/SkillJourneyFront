@@ -10,5 +10,8 @@
     "birthDate": "Birth date",
     "admissionalDate": "Admissional date",
     "role": "Role",
-    "department": "Department"
+    "department": "Department",
+    "select": "Select an option",
+    "registration": "REGISTRATION",
+    "register": "Register"
 }

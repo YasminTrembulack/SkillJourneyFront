@@ -38,7 +38,7 @@ export default function Card() {
     return (
         <>
             <Content>
-                <Text>REGISTRO</Text>
+                <Text>{getText("registration")}</Text>
                 <StyledForm>
                     <StyledLabel children={getText("fullName") + ":"} />
                     <StyledInput type="text" required />
@@ -56,7 +56,7 @@ export default function Card() {
                     <Dropdown value={department} onChange={(e) => setDepartment(e.target.value)} options={departmentOptions} />
                     <StyledLabel children={"EDV"} />
                     <StyledInput type="text" required />
-                    <Button text={"Registrar"}/>
+                    <Button text={getText("register")}/>
                 </StyledForm>
             </Content>
         </>
