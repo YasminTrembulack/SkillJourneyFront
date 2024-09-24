@@ -3,5 +3,12 @@
     "employee": "Funcionário",
     "profile": "Perfil",
     "skill": "Habilidade",
-    "training": "Treinamento"
+    "training": "Treinamento",
+    "password": "Senha",
+    "fullName": "Nome completo",
+    "accountType": "Tipo de conta",
+    "birthDate": "Data de nascimento",
+    "admissionalDate": "Data de admissão",
+    "role": "Cargo",
+    "department": "Departamento"
 }

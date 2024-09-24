@@ -3,5 +3,12 @@
     "employee" : "Employee",
     "profile": "Profile",
     "skill": "Skill",
-    "training": "Training"
+    "training": "Training",
+    "password": "Password",
+    "fullName": "Full name",
+    "accountType": "Acconunt type",
+    "birthDate": "Birth date",
+    "admissionalDate": "Admissional date",
+    "role": "Role",
+    "department": "Department"
 }

@@ -10,6 +10,7 @@ export default function HomePage() {
 
     const [role, serRole] = useState('MANAGER');
     const { getText } = useContext(LanguageContext);
+    const userId = "12345";
 
     const [firstAccess, setFirstAccess] = useState(false);
     const [password, setPassword] = useState<string>("");
@@ -45,7 +46,7 @@ export default function HomePage() {
         console.log(newPassword)
 
         try {
-            const response = await api.post("class/auth", newPassword, {
+            const response = await api.post(`user/update/${userId}`, newPassword, {
                 headers: {
                     auth: token
                 }
