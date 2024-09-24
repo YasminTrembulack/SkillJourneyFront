@@ -1,17 +1,20 @@
 import { Route, Routes } from "react-router-dom";
-import "./styles/global.css"
+import { LanguageProvider } from "./Context/language";
 import LoginPage from "./Pages/LoginPage";
 import HomePage from "./Pages/HomePage";
 import RegisterPage from "./Pages/RegisterPage";
+import "./styles/global.css"
 
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<LoginPage/>}/>  
-        <Route path="/home" element={<HomePage/>}/>
-        <Route path="/register" element={<RegisterPage/>}/>
-      </Routes>     
+      <LanguageProvider>
+        <Routes>
+          <Route path="/" element={<LoginPage/>}/>  
+          <Route path="/home" element={<HomePage/>}/>
+          <Route path="/register" element={<RegisterPage/>}/>
+        </Routes>     
+      </LanguageProvider>
     </>
   )
 }

@@ -1,17 +1,40 @@
+import { useContext, useState } from "react";
 import NavBar from "../../Components/NavBar";
 import StyledLink from "../../Components/StyledLink";
+import { LanguageContext } from "../../Context/language";
 
 export default function HomePage() {
-  return (
+
+    const [role, serRole] = useState('MANAGER');
+    const { getText } = useContext(LanguageContext);
+
+    return (
     <>
-      <NavBar>
-        <StyledLink to="/" text="Home"></StyledLink>
-        <StyledLink to="/" text="Skill"></StyledLink>
-        <StyledLink to="/" text="Treinamentos"></StyledLink>
-        <StyledLink to="/" text="Funcionários"></StyledLink>
-
-
-      </NavBar>
+        {
+            role === "EMPLOYEE" &&
+            <NavBar>
+                <StyledLink to="/" text={getText("training")}></StyledLink>
+                <StyledLink to="/" text={getText("profile")}></StyledLink>
+            </NavBar> 
+        }
+        {
+            role === "MANAGER" &&
+            <NavBar>
+                <StyledLink to="/" text={getText("training")}></StyledLink>
+                <StyledLink to="/" text={getText("employee")}></StyledLink>
+                <StyledLink to="/" text={getText("profile")}></StyledLink>
+                <StyledLink to="/" text={getText("skill")}></StyledLink>
+            </NavBar>
+        }
+        {
+            role === "ADM" &&
+            <NavBar>
+                <StyledLink to="/" text={getText("training")}></StyledLink>
+                <StyledLink to="/" text={getText("employee")}></StyledLink>
+                <StyledLink to="/" text={getText("skill")}></StyledLink>
+            </NavBar>
+        }
+        
     </>
   );
 }
