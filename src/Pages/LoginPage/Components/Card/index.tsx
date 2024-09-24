@@ -14,7 +14,7 @@ export default function Card()
                     <StyledLabel children={"Senha:"}/>             
                     <StyledInput type="password" />
                     <StyledLink to={"/register"} children={"Não tenho uma conta"}/>
-                    <Button/>
+                    <Button text={"Login"}/>
                 </StyledForm>
             </Content>
         </>

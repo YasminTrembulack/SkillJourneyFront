@@ -10,8 +10,6 @@ export const Content = styled.div`
   flex-direction: column;
   background-color: rgb(39, 71, 110);
   padding: 10px;
-  /* margin-left: 60px; */
-  /* border-radius: 20px; */
 `;
 
 export const Text = styled.p`

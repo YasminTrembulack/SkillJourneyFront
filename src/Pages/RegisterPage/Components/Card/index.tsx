@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Button from "../../../../Components/Button";
 import { Dropdown } from "../../../../Components/Dropdown";
@@ -55,7 +54,7 @@ export default function Card() {
                     <Dropdown value={department} onChange={(e) => setDepartment(e.target.value)} options={departmentOptions} />
                     <StyledLabel children={"EDV"} />
                     <StyledInput type="text" required />
-                    <Button />
+                    <Button text={"Registrar"}/>
                 </StyledForm>
             </Content>
         </>
