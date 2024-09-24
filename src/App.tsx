@@ -3,7 +3,7 @@ import { LanguageProvider } from "./Context/language";
 import LoginPage from "./Pages/LoginPage";
 import HomePage from "./Pages/HomePage";
 import RegisterPage from "./Pages/RegisterPage";
-import "./styles/global.css"
+
 
 export default function App() {
   return (
