@@ -1,6 +1,6 @@
 
 import Button from "../../../../Components/Button";
-import { Content, StyledForm, StyledInput, StyledLabel, StyledLink, Text } from "./styles";
+import { Content, StyledForm, StyledInput, StyledLabel, Text } from "./styles";
 
 export default function Card()
 {
@@ -13,7 +13,6 @@ export default function Card()
                     <StyledInput type="email"/>
                     <StyledLabel children={"Senha:"}/>             
                     <StyledInput type="password" />
-                    <StyledLink to={"/register"} children={"Não tenho uma conta"}/>
                     <Button text={"Login"}/>
                 </StyledForm>
             </Content>
