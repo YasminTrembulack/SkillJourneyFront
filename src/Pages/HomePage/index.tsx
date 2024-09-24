@@ -4,13 +4,14 @@ import StyledLink from "../../Components/StyledLink";
 import { LanguageContext } from "../../Context/language";
 import { StyledModalOverlay, StyledModalContent, StyledForm, StyledInput, StyledSubmitButton, StrengthBar } from "./styles";
 import { api } from "../../service/api";
+import Card from "../../Components/Card";
 
 export default function HomePage() {
 
     const [role, serRole] = useState('MANAGER');
     const { getText } = useContext(LanguageContext);
 
-    const [firstAccess, setFirstAccess] = useState(true);
+    const [firstAccess, setFirstAccess] = useState(false);
     const [password, setPassword] = useState<string>("");
     const [confirmPassword, setConfirmPassword] = useState<string>("");
     const [strength, setStrength] = useState(0);
@@ -56,9 +57,10 @@ export default function HomePage() {
         } catch (error) {
             // toast.error("Erro ao criar turma: " + error);
         }
-
-
     };
+
+
+
     return (
         <>
             {
@@ -85,6 +87,9 @@ export default function HomePage() {
                     <StyledLink to="/" text={getText("skill")}></StyledLink>
                 </NavBar>
             }
+
+            <Card></Card>
+
 
             {firstAccess &&
                 <StyledModalOverlay>
