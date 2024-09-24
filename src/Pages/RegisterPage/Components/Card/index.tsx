@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Button from "../../../../Components/Button";
 import { Dropdown } from "../../../../Components/Dropdown";
 import { Content, StyledForm, StyledInput, StyledLabel, Text } from "./styles";
 import { api } from "../../../../service/api";
+import { LanguageContext } from "../../../../Context/language";
 
 export default function Card() {
     const [accountType, setAccountType] = useState<string>("");
     const [department, setDepartment] = useState<string>("");
     const list = [{ value: "ADM" }, { value: "MANAGER" }, { value: "EMPLOYEE" }];
     const [departments, setDepartments] = useState<departmentData[]>([]);
+    const { getText } = useContext(LanguageContext);
 
     interface departmentData {
         id: string,
@@ -38,19 +40,19 @@ export default function Card() {
             <Content>
                 <Text>REGISTRO</Text>
                 <StyledForm>
-                    <StyledLabel children={"Nome completo:"} />
+                    <StyledLabel children={getText("fullName") + ":"} />
                     <StyledInput type="text" required />
                     <StyledLabel children={"Email:"} />
                     <StyledInput type="email" required />
-                    <StyledLabel children={"Tipo de conta:"} />
+                    <StyledLabel children={getText("accountType") + ":"} />
                     <Dropdown value={accountType} onChange={(e) => setAccountType(e.target.value)} options={list} />
-                    <StyledLabel children={"Data de nascimento"} />
+                    <StyledLabel children={getText("birthDate") + ":"} />
                     <StyledInput type="date" />
-                    <StyledLabel children={"Data de admissão:"} />
+                    <StyledLabel children={getText("admissionalDate") + ":"} />
                     <StyledInput type="date" />
-                    <StyledLabel children={"Cargo"} />
+                    <StyledLabel children={getText("role") + ":"} />
                     <StyledInput type="text" required />
-                    <StyledLabel children={"Departamento:"} />
+                    <StyledLabel children={getText("department") + ":"} />
                     <Dropdown value={department} onChange={(e) => setDepartment(e.target.value)} options={departmentOptions} />
                     <StyledLabel children={"EDV"} />
                     <StyledInput type="text" required />
