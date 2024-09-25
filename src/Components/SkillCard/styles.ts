@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
     .card {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
         perspective: 1000px;
     }
     
@@ -28,11 +28,10 @@ export const StyledWrapper = styled.div`
     }
     
     .card-front {
-        background-color: #6A2C70;
         color: #fff;
         display: flex;
         align-items: center;
-        border: 10px solid #6A2C70;
+        border: 10px solid;
         border-radius: 10px;
         justify-content: center;
         font-size: 24px;
@@ -40,14 +39,13 @@ export const StyledWrapper = styled.div`
     }
     
     .card-back {
-        background-color: #F08A5D;
         color: #fff;
         display: flex;
         align-items: center;
-        border: 10px solid #F08A5D;
+        border: 10px solid;
         border-radius: 10px;
         justify-content: center;
-        font-size: 24px;
+        font-size: 20px;
         transform: rotateY(180deg);
     }
     
