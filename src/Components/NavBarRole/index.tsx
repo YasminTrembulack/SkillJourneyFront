@@ -11,25 +11,25 @@ export default function NavBarRole({role}: { role: string})
             {
                 role === "EMPLOYEE" &&
                 <NavBar>
-                    <StyledLink to="/" text={getText("training")}></StyledLink>
+                    <StyledLink to="/home" text={getText("training")}></StyledLink>
                     <StyledLink to="/" text={getText("profile")}></StyledLink>
                 </NavBar>
             }
             {
                 role === "MANAGER" &&
                 <NavBar>
-                    <StyledLink to="/" text={getText("training")}></StyledLink>
+                    <StyledLink to="/home" text={getText("training")}></StyledLink>
                     <StyledLink to="/" text={getText("employee")}></StyledLink>
                     <StyledLink to="/" text={getText("profile")}></StyledLink>
-                    <StyledLink to="/" text={getText("skill")}></StyledLink>
+                    <StyledLink to="/skill" text={getText("skill")}></StyledLink>
                 </NavBar>
             }
             {
                 role === "ADM" &&
                 <NavBar>
-                    <StyledLink to="/" text={getText("training")}></StyledLink>
+                    <StyledLink to="/home" text={getText("training")}></StyledLink>
                     <StyledLink to="/" text={getText("employee")}></StyledLink>
-                    <StyledLink to="/" text={getText("skill")}></StyledLink>
+                    <StyledLink to="/skill" text={getText("skill")}></StyledLink>
                 </NavBar>
             }
         </>
