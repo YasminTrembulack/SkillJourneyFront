@@ -23,5 +23,5 @@ export const Title = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 `;

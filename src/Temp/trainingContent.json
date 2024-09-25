@@ -59,6 +59,66 @@
         "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
         "name": "Aula 10: Introdução a Frameworks (React, Vue)",
         "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "61c8a597-6cbb-4b82-9f14-f01ee6f4af78",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 01: Introdução ao Python",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "deee1b41-5ef5-4e77-bf00-bdf4f09d4569",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 02: Estruturas de Dados",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "8f372d6d-3b8f-4fa3-8988-5e1b7a4f9e99",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 03: Controle de Fluxo",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "a245fd64-f07e-48cf-80ec-7a6bbd8bc4e4",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 04: Funções e Módulos",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "1ae0c09d-92f8-4e4e-a43b-6f9b25e0de9c",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 05: Manipulação de Strings",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "5c4db94d-f8e2-4178-a7e1-b7db9b04ab91",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 06: Trabalhando com Listas",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "d05d98d6-1c0d-41e7-b07f-bb5c9b77f12d",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 07: Dicionários e Conjuntos",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "89e92684-7586-4179-8770-34ab9f567f0f",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 08: Tratamento de Erros",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "a2e98fbc-e659-4d9b-8b79-fd4f74cce1d0",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 09: Introdução a Bibliotecas",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "cdbf8ac0-fcf4-48b8-8d4d-dab12b441ff6",
+        "trainingId": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+        "name": "Aula 10: Projeto Final - Criando um Jogo Simples",
+        "createdAt": "2024-09-25T10:00:00Z"
     }
 ]
 }

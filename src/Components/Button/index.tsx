@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { StyledButton, Text } from "./styles";
 
 interface ButtonProps {
@@ -5,8 +6,11 @@ interface ButtonProps {
 }
 
 export default function Button({text} : ButtonProps) {
+
+  const navigate = useNavigate();
+
   return (
-    <StyledButton >
+    <StyledButton onClick={() => navigate('/training')}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
