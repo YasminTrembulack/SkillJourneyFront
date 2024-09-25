@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { StyledWrapper } from "./styles";
 
 interface ISkill {
@@ -12,9 +13,10 @@ export default function Card({ data }: { data: ISkill }) {
     const backColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
     const borderColor = data.type === 'SOFT' ? '#883c8f' : '#007BFF'; 
     const backBorderColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
-    
+    const navigate = useNavigate();
+
     return (
-        <StyledWrapper>
+        <StyledWrapper onClick={() => navigate('/skills-details', { state: { data }} )}>
             <div className="card">
                 <div className="card-inner">
                     <div className="card-front" style={{backgroundColor: frontColor, borderColor: borderColor}}>
