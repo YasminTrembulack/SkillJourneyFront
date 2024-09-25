@@ -1,9 +1,7 @@
 import { useState } from "react";
-import Card from "../../Components/Card";
 import FirstAccessModal from "./Components/FirstAccessModal";
-import StyledLink from "../../Components/StyledLink";
-import NavBar from "../../Components/NavBar";
 import Card from "../../Components/Card";
+import { MainContent,TrainingContent, Title } from "./styles";
 
 import TrainingsTemp from '../../Temp/trainings.json'
 import NavBarRole from "../../Components/NavBarRole";
@@ -19,7 +17,6 @@ export default function HomePage() {
             <Card data={t}></Card>
         )
     }
-
     return (
         <>
             <NavBarRole role={role}/>
