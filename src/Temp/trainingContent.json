@@ -1,0 +1,64 @@
+{
+    "data":[
+    {
+        "id": "b2e9a8f4-7a74-4c55-bb3a-8c646be2c0d4",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 01: Conceitos Básicos do JavaScript",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "02c59b3e-f0a5-4865-abc0-73b04bce227b",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 02: Sintaxe e Estruturas de Controle",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "3a7c16f3-03c6-4eb8-b682-5fcb220f1a1d",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 03: Funções e Escopo",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "fdd314bc-1d1f-4795-b6f0-e42e46dc7d3b",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 04: Objetos e Arrays",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "77a74638-5a88-4c71-b7e0-1bc1c7c59b72",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 05: Manipulação do DOM",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "be1c5c53-135f-4bb4-85c5-ef9494e1cabc",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 06: Eventos e Interatividade",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "009924e0-298c-4c71-b8e7-39e6e4f85b2c",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 07: Introdução ao AJAX",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "c9f78e3d-55cc-4d66-8f3f-c18f5e4c89d5",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 08: Promessas e Async/Await",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "61c8a597-6cbb-4b82-9f14-f01ee6f4af78",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 09: Boas Práticas e Debugging",
+        "createdAt": "2024-09-25T10:00:00Z"
+    },
+    {
+        "id": "deee1b41-5ef5-4e77-bf00-bdf4f09d4569",
+        "trainingId": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+        "name": "Aula 10: Introdução a Frameworks (React, Vue)",
+        "createdAt": "2024-09-25T10:00:00Z"
+    }
+]
+}

@@ -1,8 +1,8 @@
 import { StyledWrapper } from "./styles";
-import { ITraining } from "../../Types/interfaces";
+import { ITrainingContent } from "../../../../Types/interfaces";
 import { useNavigate } from "react-router-dom";
 
-export default function Card ( {data} : {data: ITraining})  {
+export default function CardContent ( {data} : {data: ITrainingContent})  {
 
   const navigate = useNavigate();
   
@@ -10,9 +10,6 @@ export default function Card ( {data} : {data: ITraining})  {
     <StyledWrapper onClick={() => navigate('/training-details', { state: { data }} )}>
       <div className="card">
         <h3 className="card__title">{data.name}</h3>
-          <div className="card__content">
-            <p className="card__description">{data.description}</p>
-          </div>
         <div className="card__date">{data.createdAt}</div>
         <div className="card__arrow">
           <svg

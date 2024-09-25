@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
         display: flex;
         flex-direction: column; 
         justify-content: space-between;
-        height: 180px;
+        height: 100px;
     }
 
     .card > * + * {

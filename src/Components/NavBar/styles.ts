@@ -10,6 +10,10 @@ export const Header = styled.div`
     background-color: #27476e;
     color: white;
     padding: 0px 5%;
+
+    @media (max-width: 960px) {
+        padding: 0px 3%;
+    }
 `
 
 export const Links = styled.div`
@@ -24,12 +28,13 @@ export const Links = styled.div`
         padding-right: 4%;
         gap: 10%;
     }
-    @media (max-width: 960) {
+    @media (max-width: 960px) {
         padding-right: 2%;
+        gap: 6%;
     }
     @media (max-width: 800px) {
         padding-right: 0%;
-        gap: 5%;
+        gap: 3%;
     }
 `
 
@@ -40,4 +45,10 @@ export const Profile = styled(PersonIcon)`
 export const Title = styled.div`
     font-size: 30px;
     text-overflow: initial;
+`;
+
+export const RightContainer = styled.div`
+    display:flex;
+    gap: 30px;
+    align-items:center;
 `;

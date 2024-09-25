@@ -1,194 +1,193 @@
 {
-    "data": [
-      {
-        "id": "1",
-        "name": "Treinamento de Introdução ao JavaScript",
-        "description": "Aprenda os conceitos básicos de JavaScript e como utilizá-lo para criar páginas interativas.",
-        "duration": "4 horas",
-        "due_date": "2024-10-10",
-        "authorId": "12345",
-        "createdAt": "2024-09-01T10:00:00Z"
-      },
-      {
-        "id": "2",
-        "name": "Workshop de React",
-        "description": "Um workshop prático sobre como construir aplicações modernas usando React.",
-        "duration": "6 horas",
-        "due_date": "2024-10-15",
-        "authorId": "67890",
-        "createdAt": "2024-09-02T11:00:00Z"
-      },
-      {
-        "id": "3",
-        "name": "Curso de Python para Iniciantes",
-        "description": "Aprenda os fundamentos da programação com Python, uma das linguagens mais populares.",
-        "duration": "5 horas",
-        "due_date": "2024-10-20",
-        "authorId": "54321",
-        "createdAt": "2024-09-03T12:00:00Z"
-      },
-      {
-        "id": "4",
-        "name": "Desenvolvimento Web com HTML e CSS",
-        "description": "Domine as bases do desenvolvimento web com HTML e CSS.",
-        "duration": "3 horas",
-        "due_date": "2024-10-25",
-        "authorId": "98765",
-        "createdAt": "2024-09-04T13:00:00Z"
-      },
-      {
-        "id": "5",
-        "name": "Data Science com Python",
-        "description": "Aprenda a analisar e visualizar dados utilizando bibliotecas de Python.",
-        "duration": "8 horas",
-        "due_date": "2024-11-01",
-        "authorId": "11223",
-        "createdAt": "2024-09-05T14:00:00Z"
-      },
-      {
-        "id": "6",
-        "name": "Fundamentos de Machine Learning",
-        "description": "Introdução aos conceitos de machine learning e suas aplicações práticas.",
-        "duration": "7 horas",
-        "due_date": "2024-11-05",
-        "authorId": "33445",
-        "createdAt": "2024-09-06T15:00:00Z"
-      },
-      {
-        "id": "7",
-        "name": "API REST com Node.js",
-        "description": "Aprenda a criar APIs RESTful utilizando Node.js e Express.",
-        "duration": "5 horas",
-        "due_date": "2024-11-10",
-        "authorId": "55667",
-        "createdAt": "2024-09-07T16:00:00Z"
-      },
-      {
-        "id": "8",
-        "name": "Introdução ao DevOps",
-        "description": "Entenda o que é DevOps e como implementar práticas de integração e entrega contínuas.",
-        "duration": "4 horas",
-        "due_date": "2024-11-15",
-        "authorId": "77889",
-        "createdAt": "2024-09-08T17:00:00Z"
-      },
-      {
-        "id": "9",
-        "name": "Design de Interfaces com Figma",
-        "description": "Aprenda a criar protótipos e designs de interfaces de usuário usando o Figma.",
-        "duration": "3 horas",
-        "due_date": "2024-11-20",
-        "authorId": "99001",
-        "createdAt": "2024-09-09T18:00:00Z"
-      },
-      {
-        "id": "10",
-        "name": "Introdução ao Blockchain",
-        "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
-        "duration": "6 horas",
-        "due_date": "2024-11-25",
-        "authorId": "22334",
-        "createdAt": "2024-09-10T19:00:00Z"
-      },
-      {
-        "id": "11",
-        "name": "Treinamento de Introdução ao JavaScript",
-        "description": "Aprenda os conceitos básicos de JavaScript e como utilizá-lo para criar páginas interativas.",
-        "duration": "4 horas",
-        "due_date": "2024-10-10",
-        "authorId": "12345",
-        "createdAt": "2024-09-01T10:00:00Z"
-      },
-      {
-        "id": "12",
-        "name": "Workshop de React",
-        "description": "Um workshop prático sobre como construir aplicações modernas usando React.",
-        "duration": "6 horas",
-        "due_date": "2024-10-15",
-        "authorId": "67890",
-        "createdAt": "2024-09-02T11:00:00Z"
-      },
-      {
-        "id": "13",
-        "name": "Curso de Python para Iniciantes",
-        "description": "Aprenda os fundamentos da programação com Python, uma das linguagens mais populares.",
-        "duration": "5 horas",
-        "due_date": "2024-10-20",
-        "authorId": "54321",
-        "createdAt": "2024-09-03T12:00:00Z"
-      },
-      {
-        "id": "14",
-        "name": "Desenvolvimento Web com HTML e CSS",
-        "description": "Domine as bases do desenvolvimento web com HTML e CSS.",
-        "duration": "3 horas",
-        "due_date": "2024-10-25",
-        "authorId": "98765",
-        "createdAt": "2024-09-04T13:00:00Z"
-      },
-      {
-        "id": "15",
-        "name": "Data Science com Python",
-        "description": "Aprenda a analisar e visualizar dados utilizando bibliotecas de Python.",
-        "duration": "8 horas",
-        "due_date": "2024-11-01",
-        "authorId": "11223",
-        "createdAt": "2024-09-05T14:00:00Z"
-      },
-      {
-        "id": "16",
-        "name": "Fundamentos de Machine Learning",
-        "description": "Introdução aos conceitos de machine learning e suas aplicações práticas.",
-        "duration": "7 horas",
-        "due_date": "2024-11-05",
-        "authorId": "33445",
-        "createdAt": "2024-09-06T15:00:00Z"
-      },
-      {
-        "id": "17",
-        "name": "API REST com Node.js",
-        "description": "Aprenda a criar APIs RESTful utilizando Node.js e Express.",
-        "duration": "5 horas",
-        "due_date": "2024-11-10",
-        "authorId": "55667",
-        "createdAt": "2024-09-07T16:00:00Z"
-      },
-      {
-        "id": "18",
-        "name": "Introdução ao DevOps",
-        "description": "Entenda o que é DevOps e como implementar práticas de integração e entrega contínuas.",
-        "duration": "4 horas",
-        "due_date": "2024-11-15",
-        "authorId": "77889",
-        "createdAt": "2024-09-08T17:00:00Z"
-      },
-      {
-        "id": "19",
-        "name": "Design de Interfaces com Figma",
-        "description": "Aprenda a criar protótipos e designs de interfaces de usuário usando o Figma.",
-        "duration": "3 horas",
-        "due_date": "2024-11-20",
-        "authorId": "99001",
-        "createdAt": "2024-09-09T18:00:00Z"
-      },
-      {
-        "id": "20",
-        "name": "Introdução ao Blockchain",
-        "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
-        "duration": "6 horas",
-        "due_date": "2024-11-25",
-        "authorId": "22334",
-        "createdAt": "2024-09-10T19:00:00Z"
-      },
-      {
-        "id": "21",
-        "name": "Introdução ao Blockchain",
-        "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
-        "duration": "6 horas",
-        "due_date": "2024-11-25",
-        "authorId": "22334",
-        "createdAt": "2024-09-10T19:00:00Z"
-      }
-    ]
-  }
-  
+  "data": [
+    {
+      "id": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+      "name": "Treinamento de Introdução ao JavaScript",
+      "description": "Aprenda os conceitos básicos de JavaScript e como utilizá-lo para criar páginas interativas.",
+      "duration": 4,
+      "due_date": "2024-10-10",
+      "authorId": "12345",
+      "createdAt": "2024-09-01T10:00:00Z"
+    },
+    {
+      "id": "e14a3be0-d13d-4f0c-b631-79d5b5148a37",
+      "name": "Workshop de React",
+      "description": "Um workshop prático sobre como construir aplicações modernas usando React.",
+      "duration": 6,
+      "due_date": "2024-10-15",
+      "authorId": "67890",
+      "createdAt": "2024-09-02T11:00:00Z"
+    },
+    {
+      "id": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+      "name": "Curso de Python para Iniciantes",
+      "description": "Aprenda os fundamentos da programação com Python, uma das linguagens mais populares.",
+      "duration": 5,
+      "due_date": "2024-10-20",
+      "authorId": "54321",
+      "createdAt": "2024-09-03T12:00:00Z"
+    },
+    {
+      "id": "e7a0e227-49c0-4b48-b0e6-b8c602b1c604",
+      "name": "Desenvolvimento Web com HTML e CSS",
+      "description": "Domine as bases do desenvolvimento web com HTML e CSS.",
+      "duration": 3,
+      "due_date": "2024-10-25",
+      "authorId": "98765",
+      "createdAt": "2024-09-04T13:00:00Z"
+    },
+    {
+      "id": "c54580d1-4b51-4552-a607-6203cd24b2c4",
+      "name": "Data Science com Python",
+      "description": "Aprenda a analisar e visualizar dados utilizando bibliotecas de Python.",
+      "duration": 8,
+      "due_date": "2024-11-01",
+      "authorId": "11223",
+      "createdAt": "2024-09-05T14:00:00Z"
+    },
+    {
+      "id": "4478e6fc-7a85-4b9b-8924-b8b9f57cbe44",
+      "name": "Fundamentos de Machine Learning",
+      "description": "Introdução aos conceitos de machine learning e suas aplicações práticas.",
+      "duration": 7,
+      "due_date": "2024-11-05",
+      "authorId": "33445",
+      "createdAt": "2024-09-06T15:00:00Z"
+    },
+    {
+      "id": "0f98c3a4-3001-4746-9a87-8d7f067fbc41",
+      "name": "API REST com Node.js",
+      "description": "Aprenda a criar APIs RESTful utilizando Node.js e Express.",
+      "duration": 5,
+      "due_date": "2024-11-10",
+      "authorId": "55667",
+      "createdAt": "2024-09-07T16:00:00Z"
+    },
+    {
+      "id": "3cbd1b05-b3ae-43b4-8b67-ef1c54a4f8ae",
+      "name": "Introdução ao DevOps",
+      "description": "Entenda o que é DevOps e como implementar práticas de integração e entrega contínuas.",
+      "duration": 4,
+      "due_date": "2024-11-15",
+      "authorId": "77889",
+      "createdAt": "2024-09-08T17:00:00Z"
+    },
+    {
+      "id": "e199d5a7-c585-418f-851f-bc4cb7f1e3ea",
+      "name": "Design de Interfaces com Figma",
+      "description": "Aprenda a criar protótipos e designs de interfaces de usuário usando o Figma.",
+      "duration": 3,
+      "due_date": "2024-11-20",
+      "authorId": "99001",
+      "createdAt": "2024-09-09T18:00:00Z"
+    },
+    {
+      "id": "69db6a5e-4b9f-4bbf-bbd7-d7cbb240cb1c",
+      "name": "Introdução ao Blockchain",
+      "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
+      "duration": 6,
+      "due_date": "2024-11-25",
+      "authorId": "22334",
+      "createdAt": "2024-09-10T19:00:00Z"
+    },
+    {
+      "id": "d3cfc95b-3ff3-4cc8-b7ae-11f9eecf1830",
+      "name": "Treinamento de Introdução ao JavaScript",
+      "description": "Aprenda os conceitos básicos de JavaScript e como utilizá-lo para criar páginas interativas.",
+      "duration": 4,
+      "due_date": "2024-10-10",
+      "authorId": "12345",
+      "createdAt": "2024-09-01T10:00:00Z"
+    },
+    {
+      "id": "e14a3be0-d13d-4f0c-b631-79d5b5148a37",
+      "name": "Workshop de React",
+      "description": "Um workshop prático sobre como construir aplicações modernas usando React.",
+      "duration": 6,
+      "due_date": "2024-10-15",
+      "authorId": "67890",
+      "createdAt": "2024-09-02T11:00:00Z"
+    },
+    {
+      "id": "02f04715-1944-4aa4-b3a4-e8c3bcd66c1a",
+      "name": "Curso de Python para Iniciantes",
+      "description": "Aprenda os fundamentos da programação com Python, uma das linguagens mais populares.",
+      "duration": 5,
+      "due_date": "2024-10-20",
+      "authorId": "54321",
+      "createdAt": "2024-09-03T12:00:00Z"
+    },
+    {
+      "id": "e7a0e227-49c0-4b48-b0e6-b8c602b1c604",
+      "name": "Desenvolvimento Web com HTML e CSS",
+      "description": "Domine as bases do desenvolvimento web com HTML e CSS.",
+      "duration": 3,
+      "due_date": "2024-10-25",
+      "authorId": "98765",
+      "createdAt": "2024-09-04T13:00:00Z"
+    },
+    {
+      "id": "c54580d1-4b51-4552-a607-6203cd24b2c4",
+      "name": "Data Science com Python",
+      "description": "Aprenda a analisar e visualizar dados utilizando bibliotecas de Python.",
+      "duration": 8,
+      "due_date": "2024-11-01",
+      "authorId": "11223",
+      "createdAt": "2024-09-05T14:00:00Z"
+    },
+    {
+      "id": "4478e6fc-7a85-4b9b-8924-b8b9f57cbe44",
+      "name": "Fundamentos de Machine Learning",
+      "description": "Introdução aos conceitos de machine learning e suas aplicações práticas.",
+      "duration": 7,
+      "due_date": "2024-11-05",
+      "authorId": "33445",
+      "createdAt": "2024-09-06T15:00:00Z"
+    },
+    {
+      "id": "0f98c3a4-3001-4746-9a87-8d7f067fbc41",
+      "name": "API REST com Node.js",
+      "description": "Aprenda a criar APIs RESTful utilizando Node.js e Express.",
+      "duration": 5,
+      "due_date": "2024-11-10",
+      "authorId": "55667",
+      "createdAt": "2024-09-07T16:00:00Z"
+    },
+    {
+      "id": "3cbd1b05-b3ae-43b4-8b67-ef1c54a4f8ae",
+      "name": "Introdução ao DevOps",
+      "description": "Entenda o que é DevOps e como implementar práticas de integração e entrega contínuas.",
+      "duration": 4,
+      "due_date": "2024-11-15",
+      "authorId": "77889",
+      "createdAt": "2024-09-08T17:00:00Z"
+    },
+    {
+      "id": "e199d5a7-c585-418f-851f-bc4cb7f1e3ea",
+      "name": "Design de Interfaces com Figma",
+      "description": "Aprenda a criar protótipos e designs de interfaces de usuário usando o Figma.",
+      "duration": 3,
+      "due_date": "2024-11-20",
+      "authorId": "99001",
+      "createdAt": "2024-09-09T18:00:00Z"
+    },
+    {
+      "id": "69db6a5e-4b9f-4bbf-bbd7-d7cbb240cb1c",
+      "name": "Introdução ao Blockchain",
+      "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
+      "duration": 6,
+      "due_date": "2024-11-25",
+      "authorId": "22334",
+      "createdAt": "2024-09-10T19:00:00Z"
+    },
+    {
+      "id": "1e473d05-947b-4e61-bc8a-0c6b5b1a9a86",
+      "name": "Introdução ao Blockchain",
+      "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
+      "duration": 6,
+      "due_date": "2024-11-25",
+      "authorId": "22334",
+      "createdAt": "2024-09-10T19:00:00Z"
+    }
+  ]
+}
