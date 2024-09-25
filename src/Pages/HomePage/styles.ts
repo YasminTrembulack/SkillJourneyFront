@@ -5,12 +5,15 @@ export const TrainingContent = styled.div`
   max-height: 90%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const MainContent = styled.div`
   width: 100%;
-  height: 4000px;
+  height: 93vh;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
 `;

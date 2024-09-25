@@ -15,15 +15,15 @@ export default function HomePage() {
     const [firstAccess, setFirstAccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    function getTrainings(){
-        return TrainingsTemp.data.map( t =>
+    function getTrainings() {
+        return TrainingsTemp.data.map(t =>
 
             <Card></Card>
         )
     }
 
     return (
-        <MainContent>
+        <>
             {
                 role === "EMPLOYEE" &&
                 <NavBar>
@@ -49,11 +49,13 @@ export default function HomePage() {
                 </NavBar>
             }
 
-            { firstAccess && <FirstAccessModal/> }
-            <TrainingContent>
+            <MainContent>
+                {firstAccess && <FirstAccessModal />}
+                <TrainingContent>
 
-                { !loading && getTrainings() }
-            </TrainingContent>
-        </MainContent>
+                    {!loading && getTrainings()}
+                </TrainingContent>
+            </MainContent>
+        </>
     );
 }
