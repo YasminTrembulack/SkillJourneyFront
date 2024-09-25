@@ -9,7 +9,7 @@ interface ISkill {
 }
 
 export default function Card({ data }: { data: ISkill }) {
-    const frontColor = data.type === 'SOFT' ? '#883c8f' : '#007BFF';
+    // const frontColor = data.type === 'SOFT' ? '#f1f1f3' : '#f1f1f3';
     const backColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
     const borderColor = data.type === 'SOFT' ? '#883c8f' : '#007BFF'; 
     const backBorderColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
@@ -19,7 +19,7 @@ export default function Card({ data }: { data: ISkill }) {
         <StyledWrapper onClick={() => navigate('/skills-details', { state: { data }} )}>
             <div className="card">
                 <div className="card-inner">
-                    <div className="card-front" style={{backgroundColor: frontColor, borderColor: borderColor}}>
+                    <div className="card-front" style={{ borderColor: borderColor}}>
                         <p>{data.name}</p>
                     </div>
                     <div className="card-back" style={{backgroundColor: backColor, borderColor: backBorderColor}}>

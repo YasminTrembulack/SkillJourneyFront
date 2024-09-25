@@ -28,7 +28,7 @@ export const StyledWrapper = styled.div`
     }
     
     .card-front {
-        color: #fff;
+        color: #000;
         display: flex;
         align-items: center;
         border: 10px solid;
@@ -36,6 +36,8 @@ export const StyledWrapper = styled.div`
         justify-content: center;
         font-size: 24px;
         transform: rotateY(0deg);
+        background-color:#f1f1f3;
+        font-weight: 500;
     }
     
     .card-back {
