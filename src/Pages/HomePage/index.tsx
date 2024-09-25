@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
-import NavBar from "../../Components/NavBar";
-import StyledLink from "../../Components/StyledLink";
 import { LanguageContext } from "../../Context/language";
-import Card from "../../Components/Card";
+import { TrainingContent, MainContent, Title } from "./styles"
 import FirstAccessModal from "./Components/FirstAccessModal";
-import { TrainingContent, MainContent } from "./styles"
+import StyledLink from "../../Components/StyledLink";
+import NavBar from "../../Components/NavBar";
+import Card from "../../Components/Card";
 
 import TrainingsTemp from '../../Temp/trainings.json'
 
@@ -17,8 +17,7 @@ export default function HomePage() {
 
     function getTrainings() {
         return TrainingsTemp.data.map(t =>
-
-            <Card></Card>
+            <Card data={t}></Card>
         )
     }
 
@@ -50,6 +49,7 @@ export default function HomePage() {
             }
 
             <MainContent>
+                <Title>Treinamentos</Title>
                 {firstAccess && <FirstAccessModal />}
                 <TrainingContent>
 

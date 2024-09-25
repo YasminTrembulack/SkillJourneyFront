@@ -179,6 +179,15 @@
         "due_date": "2024-11-25",
         "authorId": "22334",
         "createdAt": "2024-09-10T19:00:00Z"
+      },
+      {
+        "id": "21",
+        "name": "Introdução ao Blockchain",
+        "description": "Explore os fundamentos da tecnologia blockchain e suas aplicações.",
+        "duration": "6 horas",
+        "due_date": "2024-11-25",
+        "authorId": "22334",
+        "createdAt": "2024-09-10T19:00:00Z"
       }
     ]
   }

@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-
+    flex-grow: 1;
     .card {
         --border-radius: 0.75rem;
         --primary-color: #7257fa;
         --secondary-color: #3c3852;
-        width: 300px;
         font-family: "Arial";
         padding: 1rem;
         cursor: pointer;

@@ -1,6 +1,6 @@
 import { StyledWrapper } from "./styles";
 
-export default function Card ()  {
+export default function Card ({data})  {
   return (
     <StyledWrapper>
       <div className="card">
