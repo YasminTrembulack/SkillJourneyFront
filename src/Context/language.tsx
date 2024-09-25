@@ -10,7 +10,7 @@ export const LanguageContext = createContext({} as ILanguageContext);
 LanguageContext.displayName = 'Language';
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => { 
-    const [language, setLanguage] = useState<string>('en'); // 'pt' por padrão
+    const [language, setLanguage] = useState<string>(localStorage.getItem("language") != undefined ? String(localStorage.getItem("language")) :  "pt");
     const [translations, setTranslations] = useState<{ [key: string]: string }>({});
 
     const toggleLanguage = () => {
@@ -28,6 +28,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         };
 
         carregarTraducoes();
+        localStorage.setItem("language", language);
     }, [language]);
 
     const getText = (chave: string): any | null => {
