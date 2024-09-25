@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavBarRole from "../../Components/NavBarRole";
 import SkillTemp from "../../Temp/skills.json"
-import { MainContent, TrainingContent } from "./styles";
+import { MainContent, Title, SkillContent } from "./styles";
 import SkillCard from "../../Components/SkillCard";
 
 export default function SkillPage() {
@@ -12,7 +12,7 @@ export default function SkillPage() {
     function getSkills() {
         return SkillTemp.data.map(t =>
 
-            <SkillCard></SkillCard>
+            <SkillCard data={t}></SkillCard>
         )
     }
 
@@ -20,10 +20,11 @@ export default function SkillPage() {
         <>
             <NavBarRole role={role} />
             <MainContent>
-                <TrainingContent>
+                <Title>Habilidades</Title>
+                <SkillContent>
 
                     {!loading && getSkills()}
-                </TrainingContent>
+                </SkillContent>
             </MainContent>
         </>
     )

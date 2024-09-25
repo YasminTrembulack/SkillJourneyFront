@@ -35,6 +35,87 @@
             "createdAt": "2023-09-20T12:34:56.789Z",
             "updatedAt": "2023-09-21T12:34:56.789Z",
             "deletedAt": null
+        },
+        {
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "name": "Communication",
+            "description": "The ability to convey information effectively.",
+            "type": "SOFT",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "b2e0c10a-58cc-4372-a567-0e02b2c3d480",
+            "name": "JavaScript",
+            "description": "A programming language used for web development.",
+            "type": "HARD",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "a1e1c10b-58cc-4372-a567-0e02b2c3d481",
+            "name": "Problem Solving",
+            "description": "The ability to find solutions to difficult issues.",
+            "type": "SOFT",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "c3e2c10b-58cc-4372-a567-0e02b2c3d482",
+            "name": "Python",
+            "description": "A versatile programming language for various applications.",
+            "type": "HARD",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "name": "Communication",
+            "description": "The ability to convey information effectively.",
+            "type": "SOFT",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "b2e0c10a-58cc-4372-a567-0e02b2c3d480",
+            "name": "JavaScript",
+            "description": "A programming language used for web development.",
+            "type": "HARD",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "a1e1c10b-58cc-4372-a567-0e02b2c3d481",
+            "name": "Problem Solving",
+            "description": "The ability to find solutions to difficult issues.",
+            "type": "SOFT",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "name": "Communication",
+            "description": "The ability to convey information effectively.",
+            "type": "SOFT",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
+        },
+        {
+            "id": "c3e2c10b-58cc-4372-a567-0e02b2c3d482",
+            "name": "Python",
+            "description": "A versatile programming language for various applications.",
+            "type": "HARD",
+            "createdAt": "2023-09-20T12:34:56.789Z",
+            "updatedAt": "2023-09-21T12:34:56.789Z",
+            "deletedAt": null
         }
     ]
 }
