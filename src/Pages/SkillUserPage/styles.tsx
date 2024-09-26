@@ -9,19 +9,19 @@ export const Table = styled.table`
 `;
 
 export const TableHeader = styled.tr`
-    background-color: #7CD4FC;
+    background-color: #6b50e6;
 `;
 
 export const TableHead = styled.th`
     padding: 10px;
-    color: blue;
+    color: #ffffff;
     font-weight: bold;  
     border: 1px solid slategray;
 `;
 
 export const TableRow = styled.tr`
     &:nth-child(even) {
-        background-color: #f9f9f9;
+        background-color: #d8d8d8;
     }
 `;
 

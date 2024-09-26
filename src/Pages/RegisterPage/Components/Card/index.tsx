@@ -11,7 +11,7 @@ export default function Card() {
     const list = [{ value: "ADM" }, { value: "MANAGER" }, { value: "EMPLOYEE" }];
     const [departments, setDepartments] = useState<departmentData[]>([]);
     const { getText } = useContext(LanguageContext);
-
+    
     interface departmentData {
         id: string,
         name: string
