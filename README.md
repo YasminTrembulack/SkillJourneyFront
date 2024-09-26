@@ -11,3 +11,8 @@ Mudar icone do usuário para o do MUI e colocar um dropdown (select do MUI)quand
 Colocar icones de bandeira no botão de tradução, 
 Pensar sobre a cor da header,
 Floating Action Button MUI para adicionar talvez
+
+
+Fazer a relação do employeer com os conteudos do treinamento, colocar uma data de inicio e finalização,
+Para, marcar como conteudo concluido usar um btn,
+Verificar se o tempo do video bate com o tempo de conclusão.
