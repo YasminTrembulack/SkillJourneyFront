@@ -10,9 +10,9 @@ interface ISkill {
 
 export default function Card({ data }: { data: ISkill }) {
     // const frontColor = data.type === 'SOFT' ? '#f1f1f3' : '#f1f1f3';
-    const backColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
-    const borderColor = data.type === 'SOFT' ? '#883c8f' : '#007BFF'; 
-    const backBorderColor = data.type === 'HARD' ? '#2fbdf5' : '#ad49b6'; 
+    const backColor = data.type === 'HARD' ? '#0c69ce' : '#5e3efc'; 
+    const borderColor = data.type === 'SOFT' ? '#7257fa' : '#007BFF'; 
+    const backBorderColor = data.type === 'HARD' ? '#0c69ce' : '#5e3efc'; 
     const navigate = useNavigate();
 
     return (
