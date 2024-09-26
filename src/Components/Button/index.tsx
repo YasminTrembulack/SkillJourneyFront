@@ -10,7 +10,7 @@ export default function Button({text} : ButtonProps) {
   const navigate = useNavigate();
 
   return (
-    <StyledButton onClick={() => navigate('/training')}>
+    <StyledButton>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
