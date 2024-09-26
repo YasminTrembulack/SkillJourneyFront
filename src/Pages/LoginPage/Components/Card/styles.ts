@@ -5,7 +5,7 @@ export const Content = styled.div`
   width: 40%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   background-color: rgb(39, 71, 110);
@@ -15,12 +15,23 @@ export const Content = styled.div`
 `;
 
 export const Text = styled.p`
-  font-weight: 1000;
+  font-weight: 500;
   color: #ffff;
   font-size: xx-large;
 `;
 
+export const Title = styled.h1`
+  font-weight: 1000;
+  color: #ffff;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+`;
+
 export const StyledForm = styled.form`
+  border: 1px solid #fff;
+  padding: 40px;
+  border-radius: 10px;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -41,9 +52,9 @@ export const StyledInput = styled.input`
 
 export const StyledLabel = styled.p`
   width: 400px;
-  font-weight: bold;
   color: #ffff;
   font-size: x-large;
+  font-weight: 500px;
 `;
 
 export const StyledLink = styled(Link)`

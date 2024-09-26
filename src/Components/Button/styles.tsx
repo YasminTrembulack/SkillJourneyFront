@@ -6,19 +6,19 @@ export const StyledButton = styled.button`
     flex-direction:row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #5e3efc;
+    background-color: #ce81cf;
     color: #fff;
     width: 9.4em;
     height: 3.1em;
-    border: #5e3efc 0.2em solid;
+    border: #ce81cf 0.2em solid;
     border-radius: 11px;
     text-align: right;
     transition: all 0.6s ease;
 
 
     &:hover {
-        background-color: #7257fa;
-        border: #7257fa 0.2em solid;
+        background-color: #e06ce2;
+        border: #e06ce2 0.2em solid;
         cursor: pointer;
     }
 

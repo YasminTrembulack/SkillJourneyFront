@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { StyledButton, Text } from "./styles";
+import { StyledButton, Text } from "./styles.tsx";
 
 interface ButtonProps {
   text: string

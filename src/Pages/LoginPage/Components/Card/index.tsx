@@ -1,7 +1,7 @@
 
 import { useContext, useEffect, useState } from "react";
 import Button from "../../../../Components/Button";
-import { Content, StyledForm, StyledInput, StyledLabel, Text } from "./styles";
+import { Content, StyledForm, StyledInput, StyledLabel, Text, Title } from "./styles";
 import { LanguageContext } from "../../../../Context/language";
 import { api } from "../../../../service/api";
 import { useNavigate } from "react-router-dom";
@@ -34,8 +34,9 @@ export default function Card() {
     return (
         <>
             <Content>
-                <Text>LOGIN</Text>
+                <Title>SkillJourney</Title>
                 <StyledForm onSubmit={handleLogin}>
+                    <Text>LOGIN</Text>
                     <StyledLabel children={"Email:"} />
                     <StyledInput type="email" onChange={(e) => setEmail(e.target.value)} required />
                     <StyledLabel children={getText("password") + ":"} />
