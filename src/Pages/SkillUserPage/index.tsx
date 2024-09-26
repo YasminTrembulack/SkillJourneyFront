@@ -21,7 +21,6 @@ export default function SkillUserPage() {
     const id = "7dc5edd6-6aa1-44a7-96f7-6e517abbbfcc";
 
     useEffect(() => {
-        console.log("aaaaaaa");
         const fetchData = async () => {
             setLoading(true);
             try {
