@@ -1,8 +1,10 @@
 {
     "welcome": "Olá bem-vindo!",
     "employee": "Funcionário",
+    "employees": "Funcionários",
     "profile": "Perfil",
     "skill": "Habilidade",
+    "skills": "Habilidades",
     "training": "Treinamento",
     "trainings": "Treinamentos",
     "password": "Senha",

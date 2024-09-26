@@ -18,7 +18,7 @@ export default function TrainingPage() {
 
     function getTrainings() {
         return TrainingsTemp.data.map((treining : ITraining) =>
-            <Card data={treining}></Card>
+            <Card key={treining.id} data={treining}></Card>
         )
     }
     return (

@@ -74,7 +74,7 @@ export const StyledWrapper = styled.div`
     backface-visibility: hidden;
     transition: all 0.2s ease;
     font-family: sans-serif;
-    background: #5498ff;
+    background: #007BFF;
     }
 
     .checkbox-wrapper-8 .tgl-skewed + .tgl-btn:after,
@@ -102,7 +102,7 @@ export const StyledWrapper = styled.div`
     }
 
     .checkbox-wrapper-8 .tgl-skewed + .tgl-btn:active {
-    background: #5f9dfa;
+    background: #007BFF;
     }
 
     .checkbox-wrapper-8 .tgl-skewed + .tgl-btn:active:before {
@@ -110,7 +110,7 @@ export const StyledWrapper = styled.div`
     }
 
     .checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn {
-    background: #9c5eff;
+    background: #7257fa;
     }
 
     .checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:before {

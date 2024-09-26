@@ -7,6 +7,7 @@ import SkillPage from "./Pages/SkillPage";
 import TrainingDetailsPage from "./Pages/TrainingDetailsPage";
 import SkillUserPage from "./Pages/SkillUserPage";
 import EmployeePage from "./Pages/EmployeePage";
+import ProfilePage from "./Pages/ProfilePage";
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/training" element={<TrainingPage/>}/>
           <Route path="/training-details" element={<TrainingDetailsPage/>}/>
           <Route path="/employee" element={<EmployeePage/>}/>
+          <Route path="/profile" element={<ProfilePage/>}/>
           <Route path="/skill" element={<SkillPage/>}/>
           <Route path="/skills-details" element={<SkillUserPage/>}/>
 

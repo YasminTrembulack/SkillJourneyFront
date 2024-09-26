@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
-import { MainContent,EmployeeContent, Title } from "./styles";
+import { MainContent, ProfileContent, Title } from "./styles";
 
 import NavBarRole from "../../Components/NavBarRole";
 import { LanguageContext } from "../../Context/language";
 
 
-export default function EmployeePage() {
+export default function ProfilePage() {
 
     const [role, serRole] = useState('MANAGER');
     const { getText } = useContext(LanguageContext);
@@ -14,10 +14,10 @@ export default function EmployeePage() {
         <>
             <NavBarRole role={role}/>
             <MainContent>
-                <Title>{getText('employees')}</Title>
-                <EmployeeContent>
+                <Title>{getText('profile')}</Title>
+                <ProfileContent>
                 
-                </EmployeeContent>
+                </ProfileContent>
             </MainContent>
         </>
     );
