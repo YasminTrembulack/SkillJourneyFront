@@ -49,6 +49,10 @@ export const StyledWrapper = styled.div`
         justify-content: center;
         font-size: 20px;
         transform: rotateY(180deg);
+        .text-back{
+            text-align: center;
+        }
     }
+
     
 `;

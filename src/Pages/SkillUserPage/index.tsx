@@ -48,8 +48,8 @@ export default function SkillUserPage() {
                 <Table>
                     <thead>
                         <TableHeader>
-                            <TableHead>Usuário</TableHead>
-                            <TableHead>Departamento</TableHead>
+                            <TableHead>{getText("employees")}</TableHead>
+                            <TableHead>{getText("departments")}</TableHead>
                         </TableHeader>
                     </thead>
                     <tbody>

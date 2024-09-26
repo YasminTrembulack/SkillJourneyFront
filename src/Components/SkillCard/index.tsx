@@ -23,7 +23,7 @@ export default function Card({ data }: { data: ISkill }) {
                         <p>{data.name}</p>
                     </div>
                     <div className="card-back" style={{backgroundColor: backColor, borderColor: backBorderColor}}>
-                        <p>{data.description}</p>
+                        <p className="text-back">{data.description}</p>
                     </div>
                 </div>
             </div>
