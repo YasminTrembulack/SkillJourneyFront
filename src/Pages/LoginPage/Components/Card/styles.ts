@@ -30,7 +30,8 @@ export const Title = styled.h1`
 
 export const StyledForm = styled.form`
   border: 1px solid #fff;
-  padding: 40px;
+  padding: 7%;
+  width: 60%;
   border-radius: 10px;
   display: flex;
   gap: 15px;
@@ -42,7 +43,7 @@ export const StyledForm = styled.form`
 export const StyledInput = styled.input`
   border: none;
   border-radius: 50px;
-  width: 400px;
+  width: 100%;
   color: #001D4A;
   height: 30px;
   font-size: 20px;
@@ -51,7 +52,7 @@ export const StyledInput = styled.input`
 `;
 
 export const StyledLabel = styled.p`
-  width: 400px;
+  width: 100%;
   color: #ffff;
   font-size: x-large;
   font-weight: 500px;

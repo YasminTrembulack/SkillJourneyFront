@@ -6,7 +6,7 @@ export default function LoginPage() {
     <>
       <StyledDiv>
         <Card />
-        <Image src="Login.png" alt="" />
+        <Image src="Skills.png" alt="" />
       </StyledDiv>
     </>
   );
