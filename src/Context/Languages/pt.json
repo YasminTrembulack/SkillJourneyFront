@@ -5,7 +5,7 @@
     "passwordChangedError": "Erro ao alterar senha",
     "loginError": "Senha ou Email incorretos",
     "loginSuccess": "Login realizado com sucesso!",
-    "welcome": "Olá bem-vindo!",
+    "welcome": "Olá! Bem-vindo(a)",
     "employee": "Funcionário",
     "employees": "Funcionários",
     "profile": "Perfil",
@@ -26,6 +26,9 @@
     "register": "Registrar",
     "confirmPass": "Confirme a senha",
     "save": "Salvar",
+    "logout": "Sair",
+    "objectiveTitle" : "Qual é o objetivo do SkillJourney?",
+    "objective": "O SkillJourney é uma plataforma projetada para facilitar o desenvolvimento de habilidades e treinamentos internos dos funcionários de uma empresa. Seu principal objetivo é centralizar todos os cursos e treinamentos oferecidos, permitindo que os colaboradores acessem facilmente as oportunidades de aprendizado disponíveis. \\n Objetivos Principais do SkillJourney: Desenvolvimento de Habilidades: Proporcionar um ambiente onde os funcionários possam adquirir e aprimorar habilidades relevantes para suas funções e carreiras. Visibilidade para Gestores: Permitir que gestores visualizem o progresso e as competências dos funcionários, ajudando-os a identificar quem está mais apto para vagas específicas ou promoções. Apoio à Tomada de Decisão: Oferecer dados e métricas que auxiliam na seleção e desenvolvimento de talentos dentro da organização. Fomento à Cultura de Aprendizado: Incentivar uma cultura organizacional que valoriza a aprendizagem contínua e o crescimento profissional. Integração e Colaboração: Facilitar a comunicação entre funcionários e gestores, promovendo um ambiente colaborativo onde o desenvolvimento de habilidades é uma prioridade compartilhada. Em resumo, o SkillJourney visa otimizar o gerenciamento de treinamentos e o desenvolvimento de talentos, beneficiando tanto os funcionários quanto a empresa como um todo."
     "logout": "Sair",
     "hours": "Horas",
     "nameOfTraining": "Nome do treinamento...",

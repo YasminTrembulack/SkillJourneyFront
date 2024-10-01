@@ -1,45 +1,61 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import FirstAccessModal from "./Components/FirstAccessModal";
-import { MainContent, Title, HomeContent } from "./styles";
+import { MainContent, Title, HomeContent, Welcome, ObjectiveContent, RecentTrainings, TitleObjective, ObjectiveText } from "./styles";
 import { LanguageContext } from "../../Context/language";
 import { UserContext } from "../../Context/user";
+import { api } from "../../service/api";
+import { getHeaders } from "../../service/headers";
+import { ITraining } from "../../Types/interfaces";
+import CardHome from "../../Components/CardHome";
+import { log } from "console";
 
 
 export default function HomePage() {
-    // const [trainings, setTrainings] = useState<ITraining[]>([]);
-    // const [loading, setLoading] = useState(false);
+    const [trainings, setTrainings] = useState<ITraining[]>([]);
+    const [loading, setLoading] = useState(false);
     const { getText } = useContext(LanguageContext);
-    const { firstAccess } = useContext(UserContext);
+    const { firstAccess, currentUser } = useContext(UserContext);
 
-    // useEffect(() => {
-    //     fetchTrainings(0, 0);
-    // }, []);
+    useEffect(() => {
+        fetchTrainings(0, 0);
+    }, []);
 
-    // async function fetchTrainings(index: number, size: number) {
-    //     setLoading(true);
-    //     const response = await api.get('/training',{
-    //         params:{
-    //             pageIndex: index,
-    //             pageSize: size
-    //         },
-    //         headers: getHeaders()
-    //     }); 
-    //     setTrainings(response.data.data);
-    //     setLoading(false);
-    // }
+    async function fetchTrainings(index: number, size: number) {
+        setLoading(true);
+        const response = await api.get(`/employee-training/employee/${currentUser?.employeeId}`, {
+            params: {
+                pageIndex: index,
+                pageSize: size
+            },
+            headers: getHeaders()
+        });
+        console.log(response.data);
+        
+        setTrainings(response.data.trainings);
+        setLoading(false);
+    }
 
-    // function getTrainings() {
-    //     return trainings.map((treining : ITraining, index: number) =>
-    //         <Card key={index} data={treining}></Card>
-    //     )
-    // }
+    function getTrainings() {
+        if (trainings)
+            return trainings.map((treining: ITraining, index: number) =>
+                <CardHome key={index} data={treining}></CardHome>
+            )
+    }
     return (
         <>
             <MainContent>
-                <Title>{getText('home')}</Title>
+                <Title>SkillJourney</Title>
                 {firstAccess && <FirstAccessModal />}
                 <HomeContent>
-                    {/* {!loading && getTrainings()} */}
+                    <Welcome>{getText('welcome') + ", "}{currentUser?.fullName}</Welcome>
+                    <ObjectiveContent>
+                        <TitleObjective>{getText("objectiveTitle")}</TitleObjective>
+                        <ObjectiveText>{getText("objective")}</ObjectiveText>
+                    </ObjectiveContent>
+                    <p>Treinos recentes</p>
+                    <RecentTrainings>
+                        {!loading && getTrainings()}
+                    </RecentTrainings>
                 </HomeContent>
             </MainContent>
         </>
