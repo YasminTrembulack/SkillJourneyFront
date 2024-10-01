@@ -25,5 +25,7 @@
     "registration": "REGISTRO",
     "register": "Registrar",
     "confirmPass": "Confirme a senha",
-    "save": "Salvar"
+    "save": "Salvar",
+    "logout": "Sair"
+
 }

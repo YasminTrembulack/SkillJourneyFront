@@ -21,7 +21,6 @@ export default function SkillPage() {
             <MainContent>
                 <Title>{getText('skills')}</Title>
                 <SkillContent>
-
                     {!loading && getSkills()}
                 </SkillContent>
             </MainContent>

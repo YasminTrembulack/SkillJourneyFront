@@ -24,5 +24,7 @@
     "select": "Select an option",
     "registration": "REGISTRATION",
     "register": "Register",
-    "confirmPass": "Confirm password"
+    "confirmPass": "Confirm password",
+    "save": "Save",
+    "logout": "Logout"
 }

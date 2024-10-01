@@ -31,7 +31,7 @@ export const StyledWrapper = styled.div`
         color: #000;
         display: flex;
         align-items: center;
-        border: 10px solid;
+        border: 5px solid;
         border-radius: 10px;
         justify-content: center;
         font-size: 24px;

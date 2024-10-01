@@ -5,10 +5,12 @@ import PersonIcon from '@mui/icons-material/Person';
 import { Logout } from "@mui/icons-material";
 import { indigo } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
+import { LanguageContext } from "../../Context/language";
 
 export default function ProfileAvatar(){
 
   const { currentUser, userLogout } = useContext(UserContext);
+  const { getText } = useContext(LanguageContext);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const navigate = useNavigate();
@@ -81,13 +83,13 @@ export default function ProfileAvatar(){
           <ListItemIcon>
             <PersonIcon  sx={{ color: indigo[50] }} fontSize="small" />
           </ListItemIcon>
-          Profile
+          {getText('profile')}
         </MenuItem>
         <MenuItem onClick={handleLogout}>
           <ListItemIcon>
             <Logout  sx={{ color: indigo[50] }} fontSize="small" />
           </ListItemIcon>
-          Logout
+          {getText('logout')}
         </MenuItem>
       </Menu>
     </>
