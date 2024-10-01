@@ -26,5 +26,7 @@
     "register": "Register",
     "confirmPass": "Confirm password",
     "save": "Save",
-    "logout": "Logout"
+    "logout": "Logout",
+    "objectiveTitle": "What is the purpose of SkillJourney?",
+    "objective": "SkillJourney is a platform designed to facilitate skills development and internal training for a company's employees. Its main objective is to centralize all courses and training offered, allowing employees to easily access available learning opportunities. SkillJourney Main Objectives: Skills Development: Provide an environment where employees can acquire and improve skills relevant to their roles and careers. Visibility for Managers: Allow managers to view employee progress and skills, helping them identify who is best suited for specific vacancies or promotions. Decision-Making Support: Offer data and metrics that assist in the selection and development of talent within the organization. Fostering a Learning Culture: Encourage an organizational culture that values ​​continuous learning and professional growth. Integration and Collaboration: Facilitate communication between employees and managers, promoting a collaborative environment where skill development is a shared priority. In short, SkillJourney aims to optimize training management and talent development, benefiting both employees and the company as a whole."
 }
