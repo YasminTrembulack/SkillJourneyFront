@@ -31,8 +31,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         localStorage.setItem("language", language);
     }, [language]);
 
-    const getText = (chave: string): any | null => {
-        return translations[chave] ?? null; 
+    const getText = (chave: string): string  => {
+        return translations[chave] ?? "undefined"; 
     }
 
     return (

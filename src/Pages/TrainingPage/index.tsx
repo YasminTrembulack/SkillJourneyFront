@@ -1,32 +1,42 @@
-import { useContext, useState } from "react";
-import FirstAccessModal from "./Components/FirstAccessModal";
+import { useContext, useEffect, useState } from "react";
 import Card from "../../Components/Card";
 import { MainContent,TrainingContent, Title } from "./styles";
-
-import TrainingsTemp from '../../Temp/trainings.json'
-import NavBarRole from "../../Components/NavBarRole";
 import { ITraining } from '../../Types/interfaces'
 import { LanguageContext } from "../../Context/language";
-
+import { getHeaders } from "../../service/headers";
+import { api } from "../../service/api";
 
 export default function TrainingPage() {
-
-    const [role, serRole] = useState('MANAGER');
-    const [firstAccess, setFirstAccess] = useState(false);
+    const [trainings, setTrainings] = useState<ITraining[]>([]);
     const [loading, setLoading] = useState(false);
     const { getText } = useContext(LanguageContext);
 
+    useEffect(() => {
+        fetchTrainings(0, 0);
+    }, []);
+
+    async function fetchTrainings(index: number, size: number) {
+        setLoading(true);
+        const response = await api.get('/training',{
+            params:{
+                pageIndex: index,
+                pageSize: size
+            },
+            headers: getHeaders()
+        }); 
+        setTrainings(response.data.data);
+        setLoading(false);
+    }
+
     function getTrainings() {
-        return TrainingsTemp.data.map((treining : ITraining) =>
-            <Card key={treining.id} data={treining}></Card>
+        return trainings.map((treining : ITraining, index: number) =>
+            <Card key={index} data={treining}></Card>
         )
     }
     return (
         <>
-            <NavBarRole role={role}/>
             <MainContent>
                 <Title>{getText('trainings')}</Title>
-                {firstAccess && <FirstAccessModal />}
                 <TrainingContent>
                     {!loading && getTrainings()}
                 </TrainingContent>

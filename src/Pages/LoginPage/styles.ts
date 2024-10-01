@@ -8,9 +8,16 @@ export const StyledDiv = styled.div`
     height: 100vh;
 `;
 
-export const Image = styled.img`
+export const ImgDiv = styled.div`
     width: 60%;
-    padding: 80px 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const Image = styled.img`
+    width: 100%;
+    max-width: 800px;
     height: 100%;
     -webkit-user-drag: none;
     object-fit: cover

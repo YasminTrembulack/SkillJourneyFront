@@ -14,3 +14,21 @@ export interface ITrainingContent {
     name: string;
     createdAt: string;
 }
+
+export interface IUser {
+    id: string;
+    fullName: string;
+    role: string;
+    employeeId: string;
+}
+
+// export interface ITraining {
+//     authorId: string;         
+//     createdAt: string;        
+//     description: string;      
+//     due_date: string | null;  
+//     duration: number;         
+//     id: string;               
+//     name: string;             
+//     updatedAt: string;        
+// }

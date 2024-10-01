@@ -1,15 +1,17 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useContext, useState } from "react";
 import { StyledModalOverlay, StyledModalContent, StyledForm, StyledInput, StyledSubmitButton, StrengthBar } from "./styles";
 import { api } from "../../../../service/api";
-
+import { UserContext } from "../../../../Context/user";
+import { LanguageContext } from "../../../../Context/language";
+import { toast } from 'react-toastify';
+import { getHeaders } from "../../../../service/headers";
 
 export default function FirstAccessModal() {
-    const userId = "12345";
-
-    const [firstAccess, setFirstAccess] = useState(false);
     const [password, setPassword] = useState<string>("");
     const [confirmPassword, setConfirmPassword] = useState<string>("");
     const [strength, setStrength] = useState(0);
+    const { getText } = useContext(LanguageContext);
+    const { setFirstAccess, currentUser } = useContext(UserContext);
 
     const closeModal = () => {
         setFirstAccess(false);
@@ -29,27 +31,20 @@ export default function FirstAccessModal() {
         if (password != confirmPassword)
             return;
 
-        const token = localStorage.getItem("token");
-
-        const newPassword = {
+        const payload = {
             password: password
         };
 
-        console.log(token)
-        console.log(newPassword)
+        console.log(payload)
 
         try {
-            const response = await api.post(`user/update/${userId}`, newPassword, {
-                headers: {
-                    auth: token
-                }
+            await api.patch(`user/update/${currentUser?.id}`, payload, {
+                headers: getHeaders()
             });
-            // toast.success("Turma criada com sucesso!")
-            console.log(response)
-
+            toast.success(getText('passwordChangedSuccess'));
             closeModal();
-        } catch (error) {
-            // toast.error("Erro ao criar turma: " + error);
+        } catch (err) {
+            toast.error(getText('passwordChangedError') + err);
         }
     };
 
@@ -57,10 +52,11 @@ export default function FirstAccessModal() {
     return(
         <StyledModalOverlay>
                     <StyledModalContent>
+                        <h3>{getText('changeYourPass')}:</h3>
                         <StyledForm onSubmit={handleSubmit}>
                             <StyledInput
                                 type="password"
-                                placeholder="Senha"
+                                placeholder={getText('password')}
                                 value={password}
 
                                 onChange={(e: { target: { value: SetStateAction<string>; }; }) => {
@@ -71,13 +67,13 @@ export default function FirstAccessModal() {
                             />
                             <StyledInput
                                 type="password"
-                                placeholder="Confirme a senha"
+                                placeholder={getText('confirmPass')}
                                 value={confirmPassword}
                                 onChange={(e: { target: { value: SetStateAction<string>; }; }) => setConfirmPassword(e.target.value)}
                                 required
                             />
                             <StrengthBar strength={strength} />
-                            <StyledSubmitButton type="submit">Salvar</StyledSubmitButton>
+                            <StyledSubmitButton type="submit">{getText('save')}</StyledSubmitButton>
                         </StyledForm>
                     </StyledModalContent>
             </StyledModalOverlay>

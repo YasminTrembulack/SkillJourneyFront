@@ -1,4 +1,10 @@
 {
+    "home": "Início",
+    "changeYourPass": "Mude sua senha",
+    "passwordChangedSuccess": "Senha alterada com sucesso!",
+    "passwordChangedError": "Erro ao alterar senha",
+    "loginError": "Senha ou Email incorretos",
+    "loginSuccess": "Login realizado com sucesso!",
     "welcome": "Olá bem-vindo!",
     "employee": "Funcionário",
     "employees": "Funcionários",
@@ -17,5 +23,7 @@
     "departments": "Departamentos",
     "select": "Selecione uma opção",
     "registration": "REGISTRO",
-    "register": "Registrar"
+    "register": "Registrar",
+    "confirmPass": "Confirme a senha",
+    "save": "Salvar"
 }

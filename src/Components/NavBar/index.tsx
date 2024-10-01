@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
-import { Header, Links, Profile,Title, RightContainer } from "./styles";
-import ToggleButtonLang from '../ToggleButtonLang'
+import { Header, Links,Title, RightContainer } from "./styles";
+import ProfileAvatar from "../ProfileAvatar";
+import SelectLanguage from "../SelectLanguage";
 
 
 export default function NavBar({ children } : { children : ReactNode })
@@ -12,8 +13,8 @@ export default function NavBar({ children } : { children : ReactNode })
                 {children}
             </Links>
             <RightContainer>
-                <Profile sx={{ fontSize: 40 }}/>
-                <ToggleButtonLang></ToggleButtonLang>
+                <SelectLanguage/>
+                <ProfileAvatar/>
             </RightContainer>
         </Header>
     )

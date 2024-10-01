@@ -1,4 +1,10 @@
 {
+    "home": "Home",
+    "changeYourPass": "Change your password",
+    "passwordChangedSuccess": "Password changed successfully!",
+    "passwordChangedError": "Error changing password",
+    "loginError": "Incorrect password or email",
+    "loginSuccess": "Login successfully!",
     "welcome" : "Hello! Welcome",
     "employee" : "Employee",
     "employees": "Employees",
@@ -17,5 +23,6 @@
     "departments": "Departments",
     "select": "Select an option",
     "registration": "REGISTRATION",
-    "register": "Register"
+    "register": "Register",
+    "confirmPass": "Confirm password"
 }

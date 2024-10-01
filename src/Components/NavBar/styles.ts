@@ -21,7 +21,6 @@ export const Links = styled.div`
     align-items: center;
     justify-content: center;
     gap: 15%;
-    
     padding-right: 6%;
 
     @media (max-width: 1120px) {

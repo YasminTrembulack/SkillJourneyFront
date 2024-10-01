@@ -1,12 +1,14 @@
 import Card from "./Components/Card";
-import { StyledDiv, Image } from "./styles";
+import { StyledDiv, Image, ImgDiv } from "./styles";
 
 export default function LoginPage() {
   return (
     <>
       <StyledDiv>
         <Card />
-        <Image src="Skills.png" alt="" />
+        <ImgDiv>
+          <Image src="Skills.png" alt="" />
+        </ImgDiv>
       </StyledDiv>
     </>
   );

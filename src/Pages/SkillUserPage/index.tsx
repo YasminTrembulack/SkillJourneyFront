@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import NavBarRole from "../../Components/NavBarRole";
 import { MainContent, Table, TableData, TableHead, TableHeader, TableRow } from "./styles.tsx";
 import { api } from "../../service/api";
 import { Title } from "../TrainingPage/styles";
@@ -17,7 +16,6 @@ interface IResponse {
 }
 
 export default function SkillUserPage() {
-    const [role, serRole] = useState('MANAGER');
     const [users, setUsers] = useState<IResponse>({ employees: []});
     const [loading, setLoading] = useState(true);
     const id = "7dc5edd6-6aa1-44a7-96f7-6e517abbbfcc";
@@ -42,7 +40,6 @@ export default function SkillUserPage() {
 
     return (
         <>
-            <NavBarRole role={role} />
             <MainContent>
                 <Title children={getText("employees")}/>
                 <Table>

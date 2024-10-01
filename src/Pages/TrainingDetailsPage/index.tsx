@@ -1,8 +1,5 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { MainContent,TrainingContent, Title } from "./styles";
-
-import NavBarRole from "../../Components/NavBarRole";
-import { LanguageContext } from "../../Context/language";
 import { useLocation } from "react-router-dom";
 import CardContent from "./Components/CardContent";
 
@@ -11,10 +8,9 @@ import { ITrainingContent } from "../../Types/interfaces";
 
 
 export default function TrainingDetailsPage() {
-    const [role, serRole] = useState('MANAGER');
-    const [firstAccess, setFirstAccess] = useState(false);
+    // const [firstAccess, setFirstAccess] = useState(false);
     const [loading, setLoading] = useState(false);
-    const { getText } = useContext(LanguageContext);
+    // const { getText } = useContext(LanguageContext);
 
     const location = useLocation();
     const { data } = location.state;
@@ -30,7 +26,6 @@ export default function TrainingDetailsPage() {
     
     return (
         <>
-            <NavBarRole role={role}/>
             <MainContent>
                 <Title>{data.name}</Title>
                 <TrainingContent>
