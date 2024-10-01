@@ -26,5 +26,15 @@
     "register": "Register",
     "confirmPass": "Confirm password",
     "save": "Save",
-    "logout": "Logout"
+    "logout": "Logout",
+    "hours": "Hours",
+    "nameOfTraining": "Training name...",
+    "createTrainingSuccess": "Training created successfully!",
+    "createTrainingError": "Error when creating training",
+    "name": "Name",
+    "description": "Description",
+    "durationHours": "Duration in hours",
+    "dueDate": "Due date",
+    "create": "Create",
+    "createTraining": "Create training"
 }

@@ -1,10 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import Card from "../../Components/Card";
-import { MainContent,TrainingContent, Title } from "./styles";
+import { MainContent,TrainingContent, Title, TopContent, Content, Aside } from "./styles";
 import { ITraining } from '../../Types/interfaces'
 import { LanguageContext } from "../../Context/language";
 import { getHeaders } from "../../service/headers";
 import { api } from "../../service/api";
+import SearchInput from "../../Components/SearchInput";
+import AddTrainingButton from "./Components";
 
 export default function TrainingPage() {
     const [trainings, setTrainings] = useState<ITraining[]>([]);
@@ -36,10 +38,19 @@ export default function TrainingPage() {
     return (
         <>
             <MainContent>
-                <Title>{getText('trainings')}</Title>
-                <TrainingContent>
-                    {!loading && getTrainings()}
-                </TrainingContent>
+                
+                <Content>
+                    <TopContent>
+                        <Title>{getText('trainings')}</Title>
+                        <SearchInput/>
+                    </TopContent>
+                    <TrainingContent>
+                        {!loading && getTrainings()}
+                    </TrainingContent>
+                </Content>
+                
+                    <AddTrainingButton/>
+                
             </MainContent>
         </>
     );

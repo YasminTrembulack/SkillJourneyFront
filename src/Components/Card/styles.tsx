@@ -11,17 +11,22 @@ export const StyledWrapper = styled.div`
         padding: 1rem;
         cursor: pointer;
         border-radius: var(--border-radius);
-        background: #f1f1f3;
+        background: #f5f5f5;
         box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
         position: relative;
         display: flex;
         flex-direction: column; 
         justify-content: space-between;
-        height: 180px;
+        height: 150px;
     }
 
     .card > * + * {
         margin-top: 1.1em;
+    }
+    .card .card__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .card .card__content {
@@ -29,9 +34,10 @@ export const StyledWrapper = styled.div`
         font-size: 0.86rem;
         flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
         overflow: hidden; /* Oculta o conteúdo que excede o espaço */
+        text-overflow: ellipsis;
         display: -webkit-box; /* Define um contêiner flexível para o texto */
         -webkit-box-orient: vertical; /* Orienta o box verticalmente */
-        -webkit-line-clamp: 3; /* Limita a 3 linhas */
+        -webkit-line-clamp: 2; /* Limita a 3 linhas */
         max-height: 2.7em; /* Define uma altura máxima para o texto */
     }
 

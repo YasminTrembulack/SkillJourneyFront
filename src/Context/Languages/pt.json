@@ -26,6 +26,15 @@
     "register": "Registrar",
     "confirmPass": "Confirme a senha",
     "save": "Salvar",
-    "logout": "Sair"
-
+    "logout": "Sair",
+    "hours": "Horas",
+    "nameOfTraining": "Nome do treinamento...",
+    "createTrainingSuccess": "Treinamento criado com sucesso!",
+    "createTrainingError": "Erro ao criar treinamento",
+    "name": "Nome",
+    "description": "Descrição",
+    "durationHours": "Duração em horas",
+    "dueDate": "Data de vencimento",
+    "create": "Criar",
+    "createTraining": "Criar treinamento"
 }

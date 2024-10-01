@@ -1,15 +1,21 @@
 import { StyledWrapper } from "./styles";
 import { ITraining } from "../../Types/interfaces";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { LanguageContext } from "../../Context/language";
 
 export default function Card ( {data} : {data: ITraining})  {
 
   const navigate = useNavigate();
+  const { getText } =  useContext(LanguageContext);
   
   return (
     <StyledWrapper onClick={() => navigate('/training-details', { state: { data }} )}>
       <div className="card">
-        <h3 className="card__title">{data.name}</h3>
+        <div  className="card__top">
+          <h3 className="card__title">{data.name}</h3>
+          <p className="card__description">{data.duration} {getText('hours')}</p>
+        </div>
           <div className="card__content">
             <p className="card__description">{data.description}</p>
           </div>
