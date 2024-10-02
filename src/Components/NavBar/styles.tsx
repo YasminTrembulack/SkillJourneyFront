@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import PersonIcon from '@mui/icons-material/Person';
 
 export const Header = styled.div`
     width: 100%;
@@ -8,7 +7,6 @@ export const Header = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: #27476e;
-    color: white;
     padding: 0px 5%;
 
     @media (max-width: 960px) {
@@ -37,13 +35,10 @@ export const Links = styled.div`
     }
 `
 
-export const Profile = styled(PersonIcon)`
-    color: #ECA400;
-`;
-
 export const Title = styled.div`
     font-size: 30px;
     text-overflow: initial;
+    color: white;
 `;
 
 export const RightContainer = styled.div`

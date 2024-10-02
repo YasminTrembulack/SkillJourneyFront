@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-    width: 40%;
+    flex: 1 0 300px;
+    max-width: 450px;
+
     .form button {
         border: none;
         background: none;

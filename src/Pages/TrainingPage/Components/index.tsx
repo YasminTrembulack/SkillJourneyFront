@@ -8,7 +8,11 @@ import { getHeaders } from '../../../service/headers';
 import { LanguageContext } from '../../../Context/language';
 import { toast } from 'react-toastify';
 
-export default function AddTrainingButton(){
+interface AddTrainingButtonProps {
+    onAdd: () => void;
+}
+
+export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
     const [name, setName] = useState<string>('');
     const [description, setDescription] = useState<string>('');
     const [duration, setDuration] = useState<string>('');
@@ -33,10 +37,11 @@ export default function AddTrainingButton(){
             await api.post('/training/create',payload,{
                 headers: getHeaders()
             }); 
-
-            toast.success(getText('createTrainingSuccess'))
+            toast.success(getText('createTrainingSuccess'));
+            onAdd();
         } catch (error) {
-            toast.error(getText('createTrainingError'))
+            toast.error(getText('createTrainingError'));
+            console.log(getText('createTrainingError'), error);
         }
 
 

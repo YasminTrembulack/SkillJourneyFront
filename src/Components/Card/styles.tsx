@@ -17,7 +17,11 @@ export const StyledWrapper = styled.div`
         display: flex;
         flex-direction: column; 
         justify-content: space-between;
-        height: 150px;
+        height: 180px;
+    }
+    .card:hover{
+        transform: translateY(-8px);
+        transition: 0.3s ease, opacity 1s ease;
     }
 
     .card > * + * {
@@ -27,6 +31,12 @@ export const StyledWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .card .card__botton{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
     }
 
     .card .card__content {
@@ -45,6 +55,13 @@ export const StyledWrapper = styled.div`
         padding: 0;
         font-size: 1.3rem;
         font-weight: bold;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        word-break: normal;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        max-height: 54px;
     }
 
     .card .card__date {
@@ -72,7 +89,7 @@ export const StyledWrapper = styled.div`
 
     /* hover */
     .card:hover .card__title {
-        color: var(--primary-color);
+        color: #f3aa00;
         text-decoration: underline;
     }
 

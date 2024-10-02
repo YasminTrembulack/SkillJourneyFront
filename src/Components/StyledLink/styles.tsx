@@ -7,6 +7,7 @@ export const SLink = styled(Link)`
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    background-color: black; 
 
     &:after {
         content: '';
@@ -17,7 +18,7 @@ export const SLink = styled(Link)`
         transition: all 0.3s ease;
         bottom: 0; 
         left: 0; 
-        background-color: #fff; 
+        background-color: #f3aa00; 
     }
 
     &:hover::after {

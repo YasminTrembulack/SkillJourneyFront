@@ -19,11 +19,11 @@ export default function CircularButton({ children, onClick, text }: CircularButt
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: '#7257fa',
+          backgroundColor: '#f3aa00',
           '&:hover':{
-            backgroundColor: '#5e3eff',
+            backgroundColor: '#ECA400',
           }
-        }} color="secondary" variant="extended" aria-label="add" onClick={onClick}>
+        }}variant="extended" aria-label="add" onClick={onClick}>
             {children ? children : <></>} {text ? text: ""}
         </Fab>
         

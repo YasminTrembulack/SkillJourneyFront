@@ -1,25 +1,40 @@
 import { StyledWrapper } from "./styles";
 import { ITraining } from "../../Types/interfaces";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../Context/language";
 
 export default function Card ( {data} : {data: ITraining})  {
+  const [formattedDate, setFormattedDate] = useState<string>();
 
   const navigate = useNavigate();
   const { getText } =  useContext(LanguageContext);
+
+  useEffect(() => {
+    const date = new Date(data.createdAt);
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); 
+    const year = date.getFullYear();
+
+    const formatte = `${day}/${month}/${year}`; // Ex: "02/10/2024"
+    setFormattedDate(formatte);
+  }, [data]);
   
   return (
     <StyledWrapper onClick={() => navigate('/training-details', { state: { data }} )}>
       <div className="card">
         <div  className="card__top">
           <h3 className="card__title">{data.name}</h3>
-          <p className="card__description">{data.duration} {getText('hours')}</p>
         </div>
           <div className="card__content">
             <p className="card__description">{data.description}</p>
           </div>
-        <div className="card__date">{data.createdAt}</div>
+          <div  className="card__botton">
+            <div className="card__date">{formattedDate}</div>
+            <div className="card__date">-</div>
+            <p className="card__date">{data.duration} {getText('hours')}</p>
+          </div>
+
         <div className="card__arrow">
           <svg
             xmlns="http://www.w3.org/2000/svg"
