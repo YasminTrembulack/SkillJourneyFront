@@ -7,7 +7,6 @@ export const SLink = styled(Link)`
     text-decoration: none;
     font-size: 20px;
     position: relative;
-    background-color: black; 
 
     &:after {
         content: '';
