@@ -28,7 +28,12 @@
     "save": "Salvar",
     "logout": "Sair",
     "objectiveTitle" : "Qual é o objetivo do SkillJourney?",
-    "objective": "O SkillJourney é uma plataforma projetada para facilitar o desenvolvimento de habilidades e treinamentos internos dos funcionários de uma empresa. Seu principal objetivo é centralizar todos os cursos e treinamentos oferecidos, permitindo que os colaboradores acessem facilmente as oportunidades de aprendizado disponíveis. \\n Objetivos Principais do SkillJourney: Desenvolvimento de Habilidades: Proporcionar um ambiente onde os funcionários possam adquirir e aprimorar habilidades relevantes para suas funções e carreiras. Visibilidade para Gestores: Permitir que gestores visualizem o progresso e as competências dos funcionários, ajudando-os a identificar quem está mais apto para vagas específicas ou promoções. Apoio à Tomada de Decisão: Oferecer dados e métricas que auxiliam na seleção e desenvolvimento de talentos dentro da organização. Fomento à Cultura de Aprendizado: Incentivar uma cultura organizacional que valoriza a aprendizagem contínua e o crescimento profissional. Integração e Colaboração: Facilitar a comunicação entre funcionários e gestores, promovendo um ambiente colaborativo onde o desenvolvimento de habilidades é uma prioridade compartilhada. Em resumo, o SkillJourney visa otimizar o gerenciamento de treinamentos e o desenvolvimento de talentos, beneficiando tanto os funcionários quanto a empresa como um todo.",
+    "objectivePT1": "O SkillJourney é uma plataforma projetada para facilitar o desenvolvimento de habilidades e treinamentos internos dos funcionários de uma empresa. Seu principal objetivo é centralizar todos os cursos e treinamentos oferecidos, permitindo que os colaboradores acessem facilmente as oportunidades de aprendizado disponíveis.",
+    "objectivePT4": "- Desenvolvimento de Habilidades: Criar um ambiente para aquisição e aprimoramento de habilidades relevantes.",
+    "objectivePT5": "- Visibilidade para Gestores: Permitir que gestores acompanhem o progresso e competências dos funcionários.",
+    "objectivePT6": "- Apoio à Tomada de Decisão: Fornecer dados e métricas para seleção e desenvolvimento de talentos.",
+    "objectivePT7": "- Fomento à Cultura de Aprendizado: Promover uma cultura que valoriza a aprendizagem contínua.",
+    "objectivePT8": "- Integração e Colaboração: Facilitar a comunicação entre funcionários e gestores, priorizando o desenvolvimento colaborativo.",
     "hours": "Horas",
     "nameOfTraining": "Nome do treinamento...",
     "createTrainingSuccess": "Treinamento criado com sucesso!",
@@ -38,5 +43,7 @@
     "durationHours": "Duração em horas",
     "dueDate": "Data de vencimento",
     "create": "Criar",
-    "createTraining": "Criar treinamento"
+    "createTraining": "Criar treinamento",
+    "recentTraining": "Treinamentos recentes",
+    "mainObjective": "Objetivos Principais do SkillJourney:"
 }
