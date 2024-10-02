@@ -1,14 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import FirstAccessModal from "./Components/FirstAccessModal";
-import { MainContent, Title, HomeContent, Welcome, ObjectiveContent, RecentTrainings, TitleObjective, ObjectiveText } from "./styles";
+import { MainContent, Title, HomeContent, Welcome, ObjectiveContent, RecentTrainings, TitleObjective, ObjectiveText, TitleRecent, MainObjective, ObjectiveContainer, ObjectiveTextContainer, TitleDiv } from "./styles";
 import { LanguageContext } from "../../Context/language";
 import { UserContext } from "../../Context/user";
 import { api } from "../../service/api";
 import { getHeaders } from "../../service/headers";
 import { ITraining } from "../../Types/interfaces";
 import CardHome from "../../Components/CardHome";
-import { log } from "console";
-
 
 export default function HomePage() {
     const [trainings, setTrainings] = useState<ITraining[]>([]);
@@ -17,30 +15,34 @@ export default function HomePage() {
     const { firstAccess, currentUser } = useContext(UserContext);
 
     useEffect(() => {
-        fetchTrainings(0, 0);
-    }, []);
+        if (currentUser?.employeeId) {
+            fetchTrainings();
+        }
+    }, [currentUser]);
 
-    async function fetchTrainings(index: number, size: number) {
+    async function fetchTrainings() {
         setLoading(true);
-        const response = await api.get(`/employee-training/employee/${currentUser?.employeeId}`, {
-            params: {
-                pageIndex: index,
-                pageSize: size
-            },
-            headers: getHeaders()
-        });
-        console.log(response.data);
         
-        setTrainings(response.data.trainings);
-        setLoading(false);
+        try {
+                const response = await api.get(`/employee-training/employee/${currentUser?.employeeId}`, {
+                    headers: getHeaders()
+                });
+                setTrainings(response.data.trainings); // Verifique se response.data.trainings é um array
+            
+        } catch (error) {
+            console.error("Error fetching trainings:", error);
+        } finally {
+            setLoading(false);
+            
+        }
     }
 
     function getTrainings() {
-        if (trainings)
-            return trainings.map((treining: ITraining, index: number) =>
-                <CardHome key={index} data={treining}></CardHome>
-            )
+        return trainings.map((training: ITraining) => 
+            <CardHome key={training.id} data={training} />
+        );
     }
+
     return (
         <>
             <MainContent>
@@ -48,13 +50,35 @@ export default function HomePage() {
                 {firstAccess && <FirstAccessModal />}
                 <HomeContent>
                     <Welcome>{getText('welcome') + ", "}{currentUser?.fullName}</Welcome>
+                    <ObjectiveContainer>
+
                     <ObjectiveContent>
-                        <TitleObjective>{getText("objectiveTitle")}</TitleObjective>
-                        <ObjectiveText>{getText("objective")}</ObjectiveText>
+                        <TitleDiv>
+                            <TitleObjective>{getText("objectiveTitle")}</TitleObjective>
+                        </TitleDiv>
+                        <ObjectiveTextContainer>
+                            <ObjectiveText>{getText("objectivePT1")}</ObjectiveText>
+                        </ObjectiveTextContainer>
                     </ObjectiveContent>
-                    <p>Treinos recentes</p>
+                    <ObjectiveContent>
+                        <TitleDiv>
+                            <MainObjective>{getText("mainObjective")}</MainObjective>
+
+                        </TitleDiv>
+                        <ObjectiveText>{getText("objectivePT4")}</ObjectiveText>
+                        <ObjectiveText>{getText("objectivePT5")}</ObjectiveText>
+                        <ObjectiveText>{getText("objectivePT6")}</ObjectiveText>
+                        <ObjectiveText>{getText("objectivePT7")}</ObjectiveText>
+                        <ObjectiveText>{getText("objectivePT8")}</ObjectiveText>
+                    </ObjectiveContent>
+                    </ObjectiveContainer>
+                    <TitleRecent>{getText("recentTraining")}</TitleRecent>
                     <RecentTrainings>
-                        {!loading && getTrainings()}
+                        {loading ? (
+                            <p>Loading...</p>
+                        ) : (
+                            getTrainings()
+                        )}
                     </RecentTrainings>
                 </HomeContent>
             </MainContent>
