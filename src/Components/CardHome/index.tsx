@@ -8,7 +8,7 @@ export default function CardHome({ data }: { data: ITraining }) {
         <CircleText>02</CircleText>
       </Circle>
       <IconContainer>
-        <Image src="image.png"></Image>
+        <Image src="image.png" draggable="false"></Image>
       </IconContainer>
       <Title>{data.name}</Title>
       <Description>{data.description}</Description>

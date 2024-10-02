@@ -22,6 +22,13 @@ export interface IUser {
     employeeId: string;
 }
 
+export interface ISkill {
+    id: string;
+    name: string;
+    description: string;
+    type: string;
+}
+
 // export interface ITraining {
 //     authorId: string;         
 //     createdAt: string;        
