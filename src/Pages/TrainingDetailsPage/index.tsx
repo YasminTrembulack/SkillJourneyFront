@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MainContent,TrainingContent, Title } from "./styles";
 import { useLocation } from "react-router-dom";
 import CardContent from "./Components/CardContent";
@@ -9,7 +8,6 @@ import { ITrainingContent } from "../../Types/interfaces";
 
 export default function TrainingDetailsPage() {
     // const [firstAccess, setFirstAccess] = useState(false);
-    const [loading, setLoading] = useState(false);
     // const { getText } = useContext(LanguageContext);
 
     const location = useLocation();
@@ -29,7 +27,7 @@ export default function TrainingDetailsPage() {
             <MainContent>
                 <Title>{data.name}</Title>
                 <TrainingContent>
-                    {!loading && getTrainingsContents()}
+                    {getTrainingsContents()}
                 </TrainingContent>
             </MainContent>
         </>

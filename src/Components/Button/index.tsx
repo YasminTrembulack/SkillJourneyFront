@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { StyledButton, Text } from "./styles.tsx";
 
 interface ButtonProps {
@@ -7,7 +6,6 @@ interface ButtonProps {
 
 export default function Button({text} : ButtonProps) {
 
-  const navigate = useNavigate();
 
   return (
     <StyledButton>
