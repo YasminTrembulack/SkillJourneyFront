@@ -58,4 +58,23 @@ export const StyledSubmitButton = styled.button`
     }
 `;
 
+export const StyledCloseButton = styled.button`
+  background-color: #ff4d4d;
+  color: white;
+  width: 30px;  
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+
+  &:hover {
+    background-color: #e60000;
+  }
+`;
+
 

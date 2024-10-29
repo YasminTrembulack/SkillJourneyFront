@@ -35,7 +35,6 @@ export default function TrainingPage() {
             },
             headers: getHeaders()
         }); 
-        console.log(response);
         
         setTotal(response.data.total);
         setTrainings(response.data.data);

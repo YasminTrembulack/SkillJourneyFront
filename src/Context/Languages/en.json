@@ -34,7 +34,7 @@
     "name": "Name",
     "description": "Description",
     "durationHours": "Duration in hours",
-    "dueDate": "Due date",
+    "endOfRegistrations": "End of registrations",
     "create": "Create",
     "createTraining": "Create training",
     "objectiveTitle": "What is the purpose of SkillJourney?",

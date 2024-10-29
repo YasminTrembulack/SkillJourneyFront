@@ -1,4 +1,4 @@
-import { StyledArea, StyledForm, StyledInput, StyledModalContent, StyledModalOverlay, StyledSubmitButton } from './styles';
+import { StyledArea, StyledCloseButton, StyledForm, StyledInput, StyledModalContent, StyledModalOverlay, StyledSubmitButton } from './styles';
 import CircularButton from '../../../Components/CircularButton';
 import AddIcon from '@mui/icons-material/Add';
 import { Modal } from '@mui/material';
@@ -50,7 +50,7 @@ export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
   
     return(
         <>
-            <CircularButton onClick={handleOpen} text="Create">
+            <CircularButton onClick={handleOpen} text={getText('create')}>
                 <AddIcon/>
             </CircularButton>
             <Modal
@@ -61,8 +61,10 @@ export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
             >
                 <StyledModalOverlay>
                     <StyledModalContent>
+                <StyledCloseButton onClick={handleClose}>X</StyledCloseButton>
                         <h3>{getText('createTraining')}</h3>
                         <StyledForm onSubmit={handleSubmit}>
+                            <label>{getText("name")}</label>
                             <StyledInput
                                 type="text"
                                 placeholder={getText('name')}
@@ -70,6 +72,7 @@ export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
                                 onChange={e => setName(e.target.value)}
                                 required
                             />
+                            <label>{getText("description")}</label>
                             <StyledArea 
                                 placeholder={getText('description')+"..."} 
                                 onChange={(e) => setDescription(e.target.value)} 
@@ -77,6 +80,7 @@ export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
                                 rows={3} 
                                 name="lyrics"
                             />
+                            <label>{getText("durationHours")}</label>
                             <StyledInput
                                 type="number"
                                 placeholder={getText('durationHours')}
@@ -84,6 +88,7 @@ export default function AddTrainingButton({ onAdd } : AddTrainingButtonProps){
                                 onChange={e => setDuration(e.target.value)}
                                 required
                             />
+                            <label>{getText("endOfRegistrations")}</label>
                             <StyledInput
                                 type="date"
                                 placeholder={getText('dueDate')}

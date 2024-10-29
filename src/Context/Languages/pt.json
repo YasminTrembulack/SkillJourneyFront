@@ -41,7 +41,7 @@
     "name": "Nome",
     "description": "Descrição",
     "durationHours": "Duração em horas",
-    "dueDate": "Data de vencimento",
+    "endOfRegistrations": "Fim das inscrições",
     "create": "Criar",
     "createTraining": "Criar treinamento",
     "recentTraining": "Treinamentos recentes",
