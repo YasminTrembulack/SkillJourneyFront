@@ -8,11 +8,12 @@ import { ITrainingContent } from "../../Types/interfaces";
 import CircularButton from "../../Components/CircularButton";
 import { Content, TopContent } from "../TrainingPage/styles";
 import { LanguageContext } from "../../Context/language";
+import SubscribeButton from "../../Components/SubscribeButton";
 
 
 export default function TrainingDetailsPage() {
     // const [firstAccess, setFirstAccess] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [loading] = useState(false);
     const { getText } = useContext(LanguageContext);
 
     const location = useLocation();
@@ -33,7 +34,7 @@ export default function TrainingDetailsPage() {
                 <Content>
                     <TopContent>
                         <Title>{data.name}</Title>
-                        <button>AAAAA</button>
+                        <SubscribeButton text={getText("signUp")}></SubscribeButton>
                     </TopContent>
                     {data.description}
                     <TrainingContent>

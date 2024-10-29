@@ -12,6 +12,7 @@ export const TrainingContent = styled.div`
 export const MainContent = styled.div`
   width: 100%;
   min-height: 93vh;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -20,7 +21,9 @@ export const MainContent = styled.div`
 
 export const Title = styled.h1`
   display: flex;
+  width: 80%;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  flex: 1 0 250px;
+
 `;
