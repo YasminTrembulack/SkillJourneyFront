@@ -41,7 +41,7 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledInput = styled.input`
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 50px;
   width: 100%;
   color: #001D4A;
@@ -49,6 +49,11 @@ export const StyledInput = styled.input`
   font-size: 20px;
   padding: 0px 10px;
   font-weight: 1000px;
+  outline: none;
+  &:focus {
+    border: 2px solid #ce81cf;
+    outline: none; 
+  }
 `;
 
 export const StyledLabel = styled.p`
