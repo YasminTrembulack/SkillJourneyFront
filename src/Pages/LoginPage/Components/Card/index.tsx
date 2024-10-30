@@ -46,9 +46,9 @@ export default function Card() {
                 <StyledForm onSubmit={handleLogin}>
                     <Text>LOGIN</Text>
                     <StyledLabel for="email_input" children={"Email:"} />
-                    <StyledInput name="email_input" type="email" onChange={(e) => setEmail(e.target.value)} required />
+                    <StyledInput id="email_input" type="email" onChange={(e) => setEmail(e.target.value)} required />
                     <StyledLabel for="password_input" children={getText("password") + ":"} />
-                    <StyledInput name="password_input" type="password" onChange={(e) => setPassword(e.target.value)} required />
+                    <StyledInput id="password_input" type="password" onChange={(e) => setPassword(e.target.value)} required />
                     <Button text={"Login"} />
                 </StyledForm>
             </Content>
