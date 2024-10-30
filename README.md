@@ -10,3 +10,11 @@ Floating Action Button MUI para adicionar talvez
 Fazer a relação do employeer com os conteudos do treinamento, colocar uma data de inicio e finalização,
 Para, marcar como conteudo concluido usar um btn,
 Verificar se o tempo do video bate com o tempo de conclusão.
+
+
+
+yasmin@example.com
+123
+
+https://skilljourneyback.onrender.com
+https://skill-journey-front.vercel.app/
